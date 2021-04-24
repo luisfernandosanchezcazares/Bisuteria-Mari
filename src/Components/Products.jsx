@@ -20,8 +20,9 @@ const renderImgs  =(onClickImg)=>{
 
 const Products=(onClickImg)=>{
     return(
-
+       
         <div className="Products">
+             <div className="Title">Productos</div>
            
             <div>
             {renderImgs(onClickImg)}
