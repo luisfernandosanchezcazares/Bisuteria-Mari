@@ -10,19 +10,14 @@
     width: 300px;
     height: 300px;
     display: inline-block;
-    border: 1px solid white;
+   
     margin:20px;
     border-radius: 10px;
    
 }
 
-.proof{
-    width: auto;
-    height: auto;
-    display: block;
-    margin-bottom:10px;
-    
-}
+
+
 
 
 
@@ -37,9 +32,9 @@
 
 .btnVer:hover{
    
-
+    color:  #ffc600;
     border-color: white;
-    transform: translateY(10px);
+    transform: translateY(5px);
     transition: all 2s;
 }
 
@@ -51,22 +46,28 @@
     background-color:#1a1a1a ;
    margin: 0 auto;
    margin-top: 20px;
-   font-weight: bold;
+ 
 }
 
 .Title:hover{
+    color: #ffc600;
     transform: translateX(100px);
     
-    transition: all 2s;
+    transition: all 1s;
 }
 .ImgsP{
 border-radius: 10px;
+border: 1px solid white;
 
 }
 .ImgsP:hover{
-    transform: translateX(10px);
+  
+     
+   border:1px solid black;
+   transform: scale(1.02) rotate(3deg);
+  
+   transition: all 2s;
    
-    transition: all 2s;
 }
 
 .Footer{
@@ -75,9 +76,21 @@ border-radius: 10px;
     color: #fff;
     background-color: #1a1a1a;
     border-color: #1a1a1a;
+    display: flex;
+    padding-top: 20px;
 }
 
-.ContactUs{
-    width: 300px;
+.ContactUs,.Data,.Idk{
+    width: 400px;
     height: 300px;
+    border:1px solid white;
+    margin: 20px;
+   
+}
+
+.FooterSm{
+    width: 100%;
+    height: 50px;
+    color: white;
+    background-color:#ffc600 ;
 }
