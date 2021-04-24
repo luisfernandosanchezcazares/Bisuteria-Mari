@@ -1,0 +1,21 @@
+.Products{
+    width: 100%;
+    height: auto;
+    background-color: aquamarine;
+    display: inline-block;
+}
+
+
+.Product{
+    width: 30%;
+    height: 300px;
+    display: inline-block;
+    border: 1px solid white;
+}
+
+.proof{
+    width: auto;
+    height: auto;
+    display: block;
+    
+}
