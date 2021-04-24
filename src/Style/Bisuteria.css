@@ -1,21 +1,38 @@
 .Products{
     width: 100%;
     height: auto;
-    background-color: aquamarine;
+    background-color: #ffc600;
     display: inline-block;
 }
 
 
 .Product{
-    width: 30%;
+    width: 300px;
     height: 300px;
     display: inline-block;
     border: 1px solid white;
+    margin:20px;
+    border-radius: 10px;
+   
 }
 
 .proof{
     width: auto;
     height: auto;
     display: block;
+    margin-bottom:10px;
     
+}
+
+.btnVer{
+
+    width: 100px;
+    height: 40px;
+    color: #fff;
+    background-color: #1a1a1a;
+    border-color: #1a1a1a;
+}
+.ImgsP{
+border-radius: 10px;
+
 }
