@@ -12,6 +12,7 @@ function App() {
           Esto es una simulacion
           Si funciono
          me infiltre xD
+         idk anything i'm only seventeen
    
         </p>
         <a
