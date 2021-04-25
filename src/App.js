@@ -15,12 +15,6 @@ function App() {
           <Products/>
           <Footer/>
           <FooterSm/>
-
-   
-       
-          
-      
-     
     </div>
   );
 }
