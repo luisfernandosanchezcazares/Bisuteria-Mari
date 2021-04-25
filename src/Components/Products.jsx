@@ -1,4 +1,5 @@
-import react from 'react'
+import React from 'react'
+import Button from './Button'
 
 const Opc=["P1","P2","P3","P4","P5","P6"];
 
@@ -9,7 +10,7 @@ const renderImgs  =(onClickImg)=>{
      
         <img src={"./Imgs/"+name+".png"} className="ImgsP" alt="Imagen"></img>
         <div className="proof">
-            <button className="btnVer">Ver Detalles</button>
+            <Button type="btnVer" text="Ver Detalles"/>
         </div>
     </div>
     
