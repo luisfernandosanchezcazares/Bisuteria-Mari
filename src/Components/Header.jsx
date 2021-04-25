@@ -7,10 +7,8 @@ const Header = () => {
     return(
         <div className="header">
             <div className="headerUp">
-                {/* <div className="contenedorLogo"> */}
                     <img src="./Imgs/logo.png" className="Logo"/>
                     <p>AQUI VA EL ESLOGAN</p>
-                {/* </div> */}
                 <div className="cajaBusqueda">
                     <input className="cuadroTexto" placeholder="Ingresa el nombre del producto"/>
                     <Button type="botonBuscar" text="Buscar" />
