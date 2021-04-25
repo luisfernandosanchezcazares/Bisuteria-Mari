@@ -9,9 +9,9 @@ const renderImgs  =(onClickImg)=>{
      
         <img src={"./Imgs/"+name+".png"} className="ImgsP" alt="Imagen"></img>
         <div className="proof">
-        <button className="btnVer">Ver Detalles</button>
+            <button className="btnVer">Ver Detalles</button>
         </div>
-        </div>
+    </div>
     
     )
     return Opc.map(renderImg)
