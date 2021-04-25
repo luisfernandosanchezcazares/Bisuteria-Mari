@@ -123,7 +123,8 @@ ul {
 .Products{
     width: 100%;
     height: auto;
-    background-color: #ffc600;
+   
+    background-color: #FFC1E9;
     display: inline-block;
 }
 
@@ -168,7 +169,7 @@ ul {
 }
 
 .Title:hover{
-    color: #ffc600;
+ color:#FFC1E9;
     /* transform: translateX(100px); */
     width: 55%;
 }
@@ -192,13 +193,54 @@ ul {
     border-color: #1a1a1a;
     display: flex;
     padding-top: 20px;
+   
 }
 
-.ContactUs,.Data,.Idk{
+.Contact{
+    width: auto;
+   
+    margin: 10px;
+   text-align: left;
+}
+
+.Detail{
+    display: inline-block;
+    
+}
+
+.Contact:hover{
+    color:#FFC1E9;
+}
+
+.SocialImg{
+    width: 20px;
+    height: 20px;
+    margin:0 10px 0 10px;
+    padding-top: 5px;
+}
+
+
+
+.SocialImgL{
+    width: 30px;
+    height: 30px;
+    
+    
+}
+
+.SocialImg:hover,.SocialImgL:hover{
+    border-radius: 10px;
+    background-color:#FFC1E9;
+    width: 30px;
+    height: 30px;
+    padding-top: 0;
+   
+}
+.ContactUs,.Data,.QuickAccess{
     width: 400px;
-    height: 300px;
-    border:1px solid white;
+    height: auto;
     margin: 20px;
+    display: inline-block;
    
 }
 
@@ -207,8 +249,29 @@ ul {
     height: 50px;
     color: white;
     background-color:#ffc600 ;
+    background-color:#FFC1E9;
 }
 
+.Rights{
+    width: 50%;
+    height: auto;
+    float: left;
+    color: black;
+    margin-top: 10px;
+    
+}
+
+.Sm{
+   float: right;
+  
+    width: 40%;
+    height: auto;
+}
+
+.SmIcon{
+    display: inline-block;
+    margin-top: 10px;
+}
 .slider {
 	width: 95%;
 	margin: auto;
