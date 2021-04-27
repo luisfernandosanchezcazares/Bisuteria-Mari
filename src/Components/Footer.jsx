@@ -16,8 +16,7 @@ const renderImgs  =(onClickImg)=>{
       <img src={"./Imgs/ImgsSocialM/"+name+".png"} key={name} className="SocialImg"></img>
     
       
-      {Titles[ind]}
-      {ind++}
+      {Titles[ind++]}
        
           
       </p>
