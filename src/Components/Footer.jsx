@@ -6,7 +6,7 @@ import { Hidden } from '@material-ui/core';
 
 
 const Opc=["WhatsApp","Envelope"];
-const Titles=[,,,"351-112-45-23","someone@.com"]
+const Titles=[,,"351-112-45-23","someone@.com"]
 let ind=0;
 
 const renderImgs  =(onClickImg)=>{  
@@ -17,10 +17,9 @@ const renderImgs  =(onClickImg)=>{
        
       <img src={"./Imgs/ImgsSocialM/"+name+".png"} key={name} className="SocialImg"></img>
       
-        {Titles[ind=ind+1]}
+        {Titles[ind++]}
      
       </p>
-     
        </li>
        
      
