@@ -198,13 +198,14 @@ ul {
 
 .Contact{
     width: auto;
-   
     margin: 10px;
    text-align: left;
+   border:1px solid blue;
 }
 
 .Detail{
     display: inline-block;
+    border:1px solid white;
     
 }
 
@@ -238,10 +239,12 @@ ul {
    
 }
 .ContactUs,.Data,.QuickAccess{
-    width: 400px;
+   
     height: auto;
     margin: 20px;
-    display: inline-block;
+
+    
+    border: 1px solid red;
    
 }
 
