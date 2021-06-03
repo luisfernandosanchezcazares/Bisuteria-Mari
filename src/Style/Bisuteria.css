@@ -4,6 +4,7 @@
 }
 
 .header {
+    /* border: 1px red solid; */
     text-align: left;
     position: fixed;
     height: 100px;
@@ -14,11 +15,13 @@
 }
 
 .headerUp {
+    border: 1px blue solid;
     height: 70%;
     background-color: #FFC1E9;
 }
 
 .headerDown {
+    border: 1px red solid;
     height: 30%;
     background-color: white;
 }
@@ -36,9 +39,10 @@
 }
 
 .cajaBusqueda {
+    float: right;
     height: 100%;
     margin-right: 20px;
-    float: right;
+    
 }
 
 .cuadroTexto {
