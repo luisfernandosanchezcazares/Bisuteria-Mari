@@ -249,12 +249,12 @@ ul {
     width: auto;
     margin: 10px;
    text-align: left;
-   border:1px solid blue;
+  
 }
 
 .Detail{
     display: inline-block;
-    border:1px solid white;
+    
     
 }
 
@@ -291,9 +291,6 @@ ul {
    
     height: auto;
     margin: 20px;
-
-    
-    border: 1px solid red;
    
 }
 

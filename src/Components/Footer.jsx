@@ -2,9 +2,6 @@ import react from 'react'
 import Grid from '@material-ui/core/Grid'
 
 
-
-
-
 const Opc=["WhatsApp","Envelope"];
 const Titles=[,,"351-112-45-23","someone@.com"]
 let ind=0;
@@ -74,7 +71,6 @@ const Footer=(onClickImg)=>{
            </ul>
            </Grid>
         </Grid>
-
         
       
 
