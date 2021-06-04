@@ -21,7 +21,6 @@
 .headerDown {
     height: 46px;
     padding: 0px;
-    background-color: white;
 }
 
 .Logo {
@@ -29,13 +28,46 @@
     margin-left: 20px;
 }
 
+.slider {
+	width: 95%;
+	margin: auto;
+    padding-top: 140px;
+	overflow: hidden;
+}
+
+.slider ul {
+	display: flex;
+	padding: 0;
+	width: 400%;
+	
+	animation: cambio 20s infinite alternate linear;
+}
+
+.slider li {
+	width: 100%;
+	list-style: none;
+}
+
+.slider img {
+	width: 100%;
+}
+
+
 @media (max-width: 599px) {
     .header {
-        height: 190px;
+        height: 155px;
     }
 
     .headerUp {
-        height: 117px;
+        height: 110px;
+    }
+
+    .headerDown {
+        height: 50px;
+    }
+
+    .slider {
+        padding-top: 160px;
     }
 
     .cajaBusqueda {
@@ -49,7 +81,19 @@
 @media (min-width: 600px) {
 
     .header {
-        height: 100px;
+        height: 130px;
+    }
+
+    .headerUp {
+        height: 80px;
+    }
+
+    .headerDown {
+        height: 50px;
+    }
+
+    .slider {
+        padding-top: 150px;
     }
 
     .eslogan {
@@ -64,6 +108,22 @@
 }
 
 @media (min-width: 960px) {
+
+    .header {
+        height: 115px;
+    }
+
+    .headerUp {
+        height: 70px;
+    }
+
+    .headerDown {
+        height: 45px;
+    }
+
+    .slider {
+        padding-top: 130px;
+    }
 
     .eslogan {
         display: inline-block;
@@ -158,9 +218,43 @@ ul {
     color: white;
 }
 
-.cajaSlider {
-    padding-top: 100px;
+/* .slider {
+	width: 95%;
+	margin: auto;
+    padding-top: 140px;
+	overflow: hidden;
     border: 1px red solid;
+}
+
+.slider ul {
+	display: flex;
+	padding: 0;
+	width: 400%;
+	
+	animation: cambio 20s infinite alternate linear;
+}
+
+.slider li {
+	width: 100%;
+	list-style: none;
+}
+
+.slider img {
+	width: 100%;
+} */
+
+@keyframes cambio {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
 }
 
 .Products{
@@ -170,7 +264,6 @@ ul {
     display: inline-block;
     padding: 20px 0px;
 }
-
 
 .Product{
     width: 300px;
@@ -262,9 +355,6 @@ ul {
     padding-top: 5px;
 }
 
-
-
-
 .SocialImgL{
     width: 30px;
     height: 30px;
@@ -315,43 +405,6 @@ ul {
     display: inline-block;
     margin-top: 10px;
 }
-.slider {
-	width: 95%;
-	margin: auto;
-	overflow: hidden;
-}
-
-.slider ul {
-	display: flex;
-	padding: 0;
-	width: 400%;
-	
-	animation: cambio 20s infinite alternate linear;
-}
-
-.slider li {
-	width: 100%;
-	list-style: none;
-}
-
-.slider img {
-	width: 100%;
-}
-
-@keyframes cambio {
-	0% {margin-left: 0;}
-	20% {margin-left: 0;}
-	
-	25% {margin-left: -100%;}
-	45% {margin-left: -100%;}
-	
-	50% {margin-left: -200%;}
-	70% {margin-left: -200%;}
-	
-	75% {margin-left: -300%;}
-	100% {margin-left: -300%;}
-}
-
 
 .DataNImg{
     height: auto;

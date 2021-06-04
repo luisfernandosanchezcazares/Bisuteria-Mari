@@ -1,8 +1,9 @@
 import React from 'react'
+import Grid from '@material-ui/core/Grid'
 
 const Slider = () => {
     return(
-        <div className="slider">
+        <Grid className="slider">
 			<ul>
 				<li>
                     <img src="./Imgs/slider1.jpg"/>
@@ -17,7 +18,7 @@ const Slider = () => {
                     <img src="./Imgs/slider2.jpg"/>
                 </li>
 			</ul>
-		</div>
+		</Grid>
     );
 }
 
