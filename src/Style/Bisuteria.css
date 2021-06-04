@@ -362,3 +362,18 @@ ul {
 	75% {margin-left: -300%;}
 	100% {margin-left: -300%;}
 }
+
+
+.DataNImg{
+    height: auto;
+    background-color:#FFC1E9;
+    color:white;
+    height: 300px;
+    opacity: 0.8;
+
+
+}
+
+.General{
+    background-color: black;
+}
