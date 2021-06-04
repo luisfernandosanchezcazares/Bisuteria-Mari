@@ -6,7 +6,7 @@
 .header {
     text-align: left;
     position: fixed;
-    height: 100px;
+    height: 120px;
     width: 100%;
     background-color: white;
     z-index: 1000;
@@ -14,14 +14,14 @@
 }
 
 .headerUp {
-    border: 1px blue solid;
-    height: 70%;
+    height: 84px;
     background-color: #FFC1E9;
 }
 
 .headerDown {
-    border: 1px red solid;
-    height: 30%;
+    /* border: 1px red solid; */
+    height: 46px;
+    padding: 0px;
     background-color: white;
 }
 
@@ -33,7 +33,11 @@
 
 @media (max-width: 599px) {
     .header {
-        height: 170px;
+        height: 190px;
+    }
+
+    .headerUp {
+        height: 117px;
     }
 
     .cajaBusqueda {
@@ -123,7 +127,7 @@ button {
 }
 
 .nav {
-    padding-left: 10%;
+    padding-left: 2%;
 }
 
 ul {
@@ -133,14 +137,14 @@ ul {
 .nav li a {
     color: #FF60BD;
     text-decoration: none;
-    padding: 5px 15px;
+    padding: 5px 10px;
     display: block;
 }
 
 .nav > li {
     text-align: center;
     float: left;
-    width: 150px;
+    width: 100px;
     
 }
 
@@ -160,7 +164,7 @@ ul {
 
 .nav li ul li {
     text-align: left;
-    width: 150px;
+    width: 100px;
     background-color: white;
     color: white;
 }
