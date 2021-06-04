@@ -29,9 +29,9 @@
 }
 
 .slider {
-	width: 95%;
+	width: 92.5%;
 	margin: auto;
-    padding-top: 140px;
+    padding: 140px 0px 20px 0px;
 	overflow: hidden;
 }
 
