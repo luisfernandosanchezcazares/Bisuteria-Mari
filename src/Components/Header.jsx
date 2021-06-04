@@ -12,8 +12,8 @@ const Header = () => {
 
     const history = useHistory()
 
-    const onClickHandle = () => {
-        history.push("/Prueba")
+    const onClickHandle = ({ruta}) => {
+        history.push(ruta)
     }
     
     return(
@@ -32,21 +32,18 @@ const Header = () => {
                 </Grid>
             </Grid>
             <Grid className="headerDown" container item xs = {12}>
-                    {/* <ul className="nav">
-                        <li><a href="">Inicio</a></li>
-                        <li><a href="">Categorias</a>
+                    <ul className="nav">
+                        <li><Link to = "/Prueba" onClick = {onClickHandle("/Prueba")}>Inicio</Link></li>
+                        <li><Link to = "/Prueba" onClick = {onClickHandle("/Prueba")}>Categorias</Link>
                             <ul>
-                                <li><a href="">Collares</a></li>
-                                <li><a href="">Aretes</a></li>
-                                <li><a href="">Pulseras</a></li>
+                                <li><Link to = "/Prueba" onClick = {onClickHandle("/Prueba")}>Collares</Link></li>
+                                <li><Link to = "/Prueba" onClick = {onClickHandle("/Prueba")}>Aretes</Link></li>
+                                <li><Link to = "/Prueba" onClick = {onClickHandle("/Prueba")}>Pulseras</Link></li>
                             </ul>
                         </li>
-                        <li><a href="">Contacto</a></li>
-                        <li><a href="">Acerca De</a></li>
-                    </ul> */}
-                    <div>
-                        <Link to = "/Prueba" onClick = {onClickHandle} className = "a">Inicio</Link>
-                    </div>
+                        <li><Link to = "/" onClick = {onClickHandle("/")}>Contacto</Link></li>
+                        <li><Link to = "/" onClick = {onClickHandle("/")}>Acerca De</Link></li>
+                    </ul>
             </Grid>
         </Grid>
     );

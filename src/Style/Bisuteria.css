@@ -116,23 +116,6 @@ button {
     transform: scale(1.05);
 }
 
-.headerDown div {
-    padding-left: 2%;
-    /* background-color: red; */
-}
-
-.a {
-    color: #FF60BD;
-    text-decoration: none;
-    padding: 5px 10px;
-    display: block;
-}
-
-.a:hover {
-    background-color: #FFC1E9;
-    color: white;
-}
-
 .nav {
     padding-left: 2%;
 }
@@ -152,7 +135,6 @@ ul {
     text-align: center;
     float: left;
     width: 100px;
-    
 }
 
 .nav li a:hover {

@@ -7,7 +7,6 @@ import FooterSm from '../Components/FooterSm';
 
 
 const MainPage = () => {
-
     return (
         <>
           <Header/>
