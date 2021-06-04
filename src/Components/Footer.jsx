@@ -1,10 +1,12 @@
 import react from 'react'
+import Grid from '@material-ui/core/Grid'
+
 
 
 
 
 const Opc=["WhatsApp","Envelope"];
-const Titles=["","","351-112-45-23","someone@.com"]
+const Titles=[,,"351-112-45-23","someone@.com"]
 let ind=0;
 
 const renderImgs  =(onClickImg)=>{  
@@ -14,15 +16,13 @@ const renderImgs  =(onClickImg)=>{
         <p className="Detail">
        
       <img src={"./Imgs/ImgsSocialM/"+name+".png"} key={name} className="SocialImg"></img>
-    
       
-      {Titles[ind++]}
-       
-          
+        {Titles[ind++]}
+     
       </p>
        </li>
-   
-    
+       
+     
     )
     return Opc.map(renderImg)
     
@@ -32,9 +32,9 @@ const renderImgs  =(onClickImg)=>{
 const Footer=(onClickImg)=>{
     return(
 
-        <div className="Footer">
+        <Grid container direction="row" className="Footer">
            
-            <div className="ContactUs">
+            <Grid container item xs="auto" lg={4} direction="column" alignContent="center" className="ContactUs">
            Contacto
           <hr></hr>
            <ul>
@@ -52,21 +52,28 @@ const Footer=(onClickImg)=>{
       </p>
        </li>
            </ul>
-                      </div>
+                      </Grid>
 
-           <div className="Data">
+             <Grid container item  xs="auto" lg={4} direction="column" alignContent="center"  className="Data">
            Ayuda
-           <hr></hr>
-           </div>
+           <hr></hr> 
+           <ul>
+              <li className="Contact">Preguntas Frecuentes</li> 
+            
+           </ul>
+           </Grid>
            
-           <div className="QuickAccess">
-           Acceso Rápido
+          
+           
+           <Grid container item  xs="auto" lg={4} direction="column" alignContent="center" className="QuickAccess">
+           Acceso Rápido 
            <hr></hr>
            <ul>
               <li className="Contact">Acerca De</li> 
+              <li className="Contact">Datos extras que debe</li> 
            </ul>
-           </div>
-        </div>
+           </Grid>
+        </Grid>
 
         
       
