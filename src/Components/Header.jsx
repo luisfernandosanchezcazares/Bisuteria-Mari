@@ -6,7 +6,7 @@ import Typography from '@material-ui/core/Typography'
 const Header = () => {
     return(
         <Grid className="header" container justify = "center" column spacing = {2}>
-            <Grid className="headerUp" container item xs = {12} sm = {12} md = {12} lg = {12}>
+            <Grid className="headerUp" container item xs = {12}>
                 <Grid container justify = "left" container item xs = {12} sm = {4} md = {6} lg = {6}>
                     <img height="50px" src="./Imgs/logo.png" className="Logo"/>
                     <p className ="eslogan">Luce elegante, luce genial</p>
