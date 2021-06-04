@@ -14,11 +14,13 @@
 }
 
 .headerUp {
+    border: 1px blue solid;
     height: 70%;
     background-color: #FFC1E9;
 }
 
 .headerDown {
+    border: 1px red solid;
     height: 30%;
     background-color: white;
 }
@@ -26,25 +28,73 @@
 .Logo {
     float: left;
     margin-left: 20px;
-    height: 100%;
+    border: 1xp red solid;
 }
 
-.headerUp p {
+@media (max-width: 599px) {
+    .header {
+        height: 170px;
+    }
+
+    .cajaBusqueda {
+        height: 100%;
+        width: 70%;
+        padding-right: 10%;
+        background-color: blue;
+    }
+}
+
+@media (min-width: 600px) {
+
+    .header {
+        height: 100px;
+    }
+
+    .cajaBusqueda {
+        background-color: yellow;
+    }
+
+    .eslogan {
+        display: none;
+        visibility: hidden;
+    }
+
+    .cuadroTexto {
+        clear: both;
+        margin: 0px;
+    }
+}
+
+@media (min-width: 960px) {
+    .cajaBusqueda {
+        background-color: orange;
+    }
+
+    .eslogan {
+        display: inline-block;
+        visibility: visible;
+    }
+}
+
+.eslogan {
     display: inline-block;
     padding-top: 20px;
     height: 70%;
 }
 
 .cajaBusqueda {
-    height: 100%;
-    margin-right: 20px;
     float: right;
+    height: 100%;
+    width: 100%;
+    margin-right: 20px;
+    text-align: right;
+    border: 1px red solid;
 }
 
 .cuadroTexto {
     margin: 20px 10px;
     height: 40%;
-    width: 300px;
+    width: 250px;
     outline: 0;
     border: none;
     border-radius: 0.25rem;
@@ -123,9 +173,9 @@ ul {
 .Products{
     width: 100%;
     height: auto;
-   
     background-color: #FFC1E9;
     display: inline-block;
+    padding: 20px 0px;
 }
 
 
@@ -136,7 +186,6 @@ ul {
    
     margin:20px;
     border-radius: 10px;
-   
 }
 
 
