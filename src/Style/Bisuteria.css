@@ -19,7 +19,6 @@
 }
 
 .headerDown {
-    /* border: 1px red solid; */
     height: 46px;
     padding: 0px;
     background-color: white;
@@ -28,7 +27,6 @@
 .Logo {
     float: left;
     margin-left: 20px;
-    border: 1xp red solid;
 }
 
 @media (max-width: 599px) {
@@ -44,7 +42,7 @@
         height: 100%;
         width: 70%;
         padding-right: 10%;
-        background-color: blue;
+
     }
 }
 
@@ -52,10 +50,6 @@
 
     .header {
         height: 100px;
-    }
-
-    .cajaBusqueda {
-        background-color: yellow;
     }
 
     .eslogan {
@@ -70,9 +64,6 @@
 }
 
 @media (min-width: 960px) {
-    .cajaBusqueda {
-        background-color: orange;
-    }
 
     .eslogan {
         display: inline-block;
@@ -92,7 +83,6 @@
     width: 100%;
     margin-right: 20px;
     text-align: right;
-    border: 1px red solid;
 }
 
 .cuadroTexto {
@@ -124,6 +114,23 @@ button {
 .botonBuscar:hover {
     background-color: #ff559c;
     transform: scale(1.05);
+}
+
+.headerDown div {
+    padding-left: 2%;
+    /* background-color: red; */
+}
+
+.a {
+    color: #FF60BD;
+    text-decoration: none;
+    padding: 5px 10px;
+    display: block;
+}
+
+.a:hover {
+    background-color: #FFC1E9;
+    color: white;
 }
 
 .nav {

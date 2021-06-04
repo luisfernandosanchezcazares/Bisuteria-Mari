@@ -2,8 +2,20 @@ import React from 'react';
 import Button from './Button';
 import Grid from '@material-ui/core/Grid'
 import Typography from '@material-ui/core/Typography'
+import {Link} from 'react-router-dom'
+import {BrowserRouter as Router,
+    Switch,
+    Route} from 'react-router-dom'
+import {useHistory} from 'react-router-dom'
 
 const Header = () => {
+
+    const history = useHistory()
+
+    const onClickHandle = () => {
+        history.push("/Prueba")
+    }
+    
     return(
         <Grid className="header" container justify = "center" column spacing = {2}>
             <Grid className="headerUp" container item xs = {12}>
@@ -20,7 +32,7 @@ const Header = () => {
                 </Grid>
             </Grid>
             <Grid className="headerDown" container item xs = {12}>
-                    <ul className="nav">
+                    {/* <ul className="nav">
                         <li><a href="">Inicio</a></li>
                         <li><a href="">Categorias</a>
                             <ul>
@@ -31,7 +43,10 @@ const Header = () => {
                         </li>
                         <li><a href="">Contacto</a></li>
                         <li><a href="">Acerca De</a></li>
-                    </ul>
+                    </ul> */}
+                    <div>
+                        <Link to = "/Prueba" onClick = {onClickHandle} className = "a">Inicio</Link>
+                    </div>
             </Grid>
         </Grid>
     );

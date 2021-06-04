@@ -8,8 +8,7 @@ import '../Style/Bisuteria.css';
 function Details() {
   return (
     <div className="App">
-         Hola como estas
-          
+      <Footer/>
     </div>
   );
 }
