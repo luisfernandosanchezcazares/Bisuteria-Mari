@@ -13,7 +13,7 @@ const Header = () => {
     const history = useHistory()
 
     const onClickHandle = () => {
-        history.push("/Prueba")
+        history.push("/Details")
     }
     
     return(
@@ -45,7 +45,7 @@ const Header = () => {
                         <li><a href="">Acerca De</a></li>
                     </ul> */}
                     <div>
-                        <Link to = "/Prueba" onClick = {onClickHandle} className = "a">Inicio</Link>
+                        <Link to = "/Details" onClick = {onClickHandle} className = "a">Inicio</Link>
                     </div>
             </Grid>
         </Grid>

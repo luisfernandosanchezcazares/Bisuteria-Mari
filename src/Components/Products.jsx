@@ -2,9 +2,16 @@ import React from 'react'
 import Buttons from './Button'
 import Grid from '@material-ui/core/Grid'
 import DetailsImg from './DetailsImg'
+import {BrowserRouter as Router,
+    Switch,
+    Route,
+    Link
+    } from 'react-router-dom'
+    import Cookies from 'universal-cookie'
 
 
 const Opc=["P1","P2","P3","P4","P5","P6","P7","P8","P9"];
+
 
 
 const renderImgs  =(onClickImg)=>{   
@@ -15,7 +22,10 @@ const renderImgs  =(onClickImg)=>{
         <div className="proof">
             <Buttons  type="btnVer" text="Ver Detalles" name={name}/>
             
+            
         </div>
+
+      
     </div>
     
     )
@@ -23,7 +33,10 @@ const renderImgs  =(onClickImg)=>{
     
 }
 
+
+
 const Products=(onClickImg)=>{
+    
     return(
        
         <div className="Products">

@@ -9,34 +9,29 @@ import {BrowserRouter as Router,
     } from 'react-router-dom' 
  
 import DetailsImg from './DetailsImg'
-import Details from "../Pages/Details"
-
+import {useHistory} from 'react-router-dom'
 
 
 const Buttons = ({text, type, name}) => {
 
     
+    const history = useHistory();
 
     return(
-        <button className={type} key={name} onClick={()=>{
+        <button className={type} key={name} onClick={(onClickHandle)=>{
 
-           
-           
-           }}>
+            history.push("/Details")
+            localStorage.setItem('value',name);
+
+            
+}}>
             {text}
 
 
         </button>
 
-        /*<BrowserRouter>
-            <Route  path = '/DetailsImg'>
-         
-             <DetailsImg name={name}></DetailsImg>
-             
-            </Route>
-
-            <Link to="./DetailsImg" className="btnVer">Ver Detalles</Link>
-      </BrowserRouter>*/
+            
+      
         
          
           

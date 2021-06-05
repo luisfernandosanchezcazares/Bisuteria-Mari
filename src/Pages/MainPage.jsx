@@ -4,6 +4,7 @@ import Slider from '../Components/Slider';
 import Products from '../Components/Products';
 import Footer from '../Components/Footer';
 import FooterSm from '../Components/FooterSm';
+import DetailsImg from '../Components/DetailsImg';
 
 
 const MainPage = () => {

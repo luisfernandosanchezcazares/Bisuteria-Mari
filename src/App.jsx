@@ -12,7 +12,7 @@ import {BrowserRouter as Router,
     Route} from 'react-router-dom'
     
 import MainPage from './Pages/MainPage'
-import Prueba from './Pages/Prueba'
+import Details from './Pages/Details'
   
 
 
@@ -27,8 +27,8 @@ function App() {
           <Route exact path = '/'>
             <MainPage/>
           </Route>
-          <Route path = '/Prueba'>
-              <Prueba/>
+          <Route path = '/Details'>
+         <Details></Details>
           </Route>
           {/* <Route path = '/city'>
               <CityPage/>

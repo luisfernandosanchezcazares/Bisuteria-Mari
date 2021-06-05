@@ -2,19 +2,25 @@ import React from 'react'
 import Grid from '@material-ui/core/Grid'
 
 const DetailsImg=({name})=>{
+
+    
     return(
        
-        <Grid container md={12} className="General" direction="row" alignContent="center" >
+        <Grid container md="auto" lg={12} xs="auto" className="General" direction="row" alignContent="center" alignItems="center" spacing={2}>
            
-             <Grid item>
+             <Grid container  item alignItems="center"  direction="column" md={6} xs="auto">
              <img src={"./Imgs/"+name+".png"} className="ImgsP"  alt="Imagen"></img>
-                  </Grid>
+            
+             </Grid>
 
-                  <Grid item  md={6}className="DataNImg">
-                     Nombre:
-                     Precio:
+            <Grid container item  md={5} xs="auto" className="DataNImg" alignContent="center" direction="column">
+                     <h3>Nombre:</h3>
+                     Nombre Prueba
+                    <h3> Precio:</h3>
+                    500$
+                    
                      
-                  </Grid>
+            </Grid>
         
         </Grid >
       

@@ -31,7 +31,7 @@ const Footer=(onClickImg)=>{
 
         <Grid container direction="row" className="Footer">
            
-            <Grid container item xs="auto" lg={4} direction="column" alignContent="center" className="ContactUs">
+            <Grid container item xs="auto" lg={4} md={4} direction="column" alignContent="center" className="ContactUs">
            Contacto
           <hr></hr>
            <ul>
@@ -51,7 +51,7 @@ const Footer=(onClickImg)=>{
            </ul>
                       </Grid>
 
-             <Grid container item  xs="auto" lg={4} direction="column" alignContent="center"  className="Data">
+             <Grid container item  xs="auto" lg={4} md={4} direction="column" alignContent="center"  className="Data">
            Ayuda
            <hr></hr> 
            <ul>
@@ -62,7 +62,7 @@ const Footer=(onClickImg)=>{
            
           
            
-           <Grid container item  xs="auto" lg={4} direction="column" alignContent="center" className="QuickAccess">
+           <Grid container item  xs="auto" lg={4} md={4} direction="column" alignContent="center" className="QuickAccess">
            Acceso Rápido 
            <hr></hr>
            <ul>

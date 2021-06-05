@@ -376,11 +376,16 @@ ul {
     background-color:#FFC1E9;
     color:white;
     height: 300px;
-    opacity: 0.8;
+   
+    border-radius: 10px;
+    
 
 
 }
 
 .General{
     background-color: black;
+    
+    padding: 150px 0 60px 0;
+    
 }
