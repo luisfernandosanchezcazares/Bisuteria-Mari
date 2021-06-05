@@ -8,7 +8,6 @@ import DetailsImg from '../Components/DetailsImg';
 
 
 const MainPage = () => {
-
     return (
         <>
           <Header/>

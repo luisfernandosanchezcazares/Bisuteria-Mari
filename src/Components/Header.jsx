@@ -1,19 +1,14 @@
 import React from 'react';
 import Button from './Button';
 import Grid from '@material-ui/core/Grid'
-import Typography from '@material-ui/core/Typography'
-import {Link} from 'react-router-dom'
-import {BrowserRouter as Router,
-    Switch,
-    Route} from 'react-router-dom'
-import {useHistory} from 'react-router-dom'
+import {useHistory, Link} from 'react-router-dom'
 
 const Header = () => {
 
     const history = useHistory()
 
-    const onClickHandle = () => {
-        history.push("/Details")
+    const onClickHandle = ({ruta}) => {
+        history.push(ruta)
     }
     
     return(
@@ -32,21 +27,18 @@ const Header = () => {
                 </Grid>
             </Grid>
             <Grid className="headerDown" container item xs = {12}>
-                    {/* <ul className="nav">
-                        <li><a href="">Inicio</a></li>
-                        <li><a href="">Categorias</a>
+                    <ul className="nav">
+                        <li><Link to = "/" onClick = {onClickHandle("/")}>Inicio</Link></li>
+                        <li><Link to = "/Prueba" onClick = {onClickHandle("/Prueba")}>Categorias</Link>
                             <ul>
-                                <li><a href="">Collares</a></li>
-                                <li><a href="">Aretes</a></li>
-                                <li><a href="">Pulseras</a></li>
+                                <li><Link to = "/Prueba" onClick = {onClickHandle("/Prueba")}>Collares</Link></li>
+                                <li><Link to = "/Prueba" onClick = {onClickHandle("/Prueba")}>Aretes</Link></li>
+                                <li><Link to = "/Prueba" onClick = {onClickHandle("/Prueba")}>Pulseras</Link></li>
                             </ul>
                         </li>
-                        <li><a href="">Contacto</a></li>
-                        <li><a href="">Acerca De</a></li>
-                    </ul> */}
-                    <div>
-                        <Link to = "/Details" onClick = {onClickHandle} className = "a">Inicio</Link>
-                    </div>
+                        <li><Link to = "/" onClick = {onClickHandle("/")}>Contacto</Link></li>
+                        <li><Link to = "/" onClick = {onClickHandle("/")}>Acerca De</Link></li>
+                    </ul>
             </Grid>
         </Grid>
     );
