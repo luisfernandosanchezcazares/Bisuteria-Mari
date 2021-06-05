@@ -7,7 +7,7 @@ import {BrowserRouter as Router,
     Route,
     Link
     } from 'react-router-dom'
-    import Cookies from 'universal-cookie'
+    // import Cookies from 'universal-cookie'
 
 
 const Opc=["P1","P2","P3","P4","P5","P6","P7","P8","P9"];
