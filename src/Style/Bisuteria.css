@@ -359,7 +359,6 @@ ul {
     width: 30px;
     height: 30px;
     
-    
 }
 
 .SocialImg:hover,.SocialImgL:hover{
@@ -410,17 +409,15 @@ ul {
     height: auto;
     background-color:#FFC1E9;
     color:white;
-    height: 300px;
-   
+    height: 300px;  
     border-radius: 10px;
-    
 
 
 }
 
 .General{
     background-color: black;
-    
+    background-image: url("./Background.png"); 
     padding: 150px 0 60px 0;
     
 }

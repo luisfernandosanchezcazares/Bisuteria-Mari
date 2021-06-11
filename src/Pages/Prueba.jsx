@@ -1,20 +1,14 @@
 import React from 'react'
 import Footer from '../Components/Footer'
 import Header from '../Components/Header'
+import App from '../Pages/AddProduct'
 
 const Prueba = () => {
     return (
-        <div>
-            <Header/>
-            <h1>HOLA</h1>
-            <h1>HOLA</h1>
-            <h1>HOLA</h1>
-            <h1>HOLA</h1>
-            <h1>HOLA</h1>
-            <h1>HOLA</h1>
-            <h1>HOLA</h1>
-            <Footer/>
-        </div>
+        <>
+        <App></App>
+        Hola
+        </>
     )
 }
 

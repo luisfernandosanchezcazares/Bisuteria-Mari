@@ -4,14 +4,12 @@ import FooterSm from '../Components/FooterSm';
 import Slider from '../Components/Slider';
 import Products from '../Components/Products';
 import DetailsImg from '../Components/DetailsImg'
-import Cookies from 'universal-cookie'
 import '../Style/Bisuteria.css';
-
+import App from '../Pages/AddProduct'
 
 
 const Details = () => {
-  
-  
+    
   return (
     <>
   
@@ -20,6 +18,7 @@ const Details = () => {
 
     <Footer></Footer>
     <FooterSm></FooterSm>
+   {/* <App></App>*/}
      
         </>
   );

@@ -3,30 +3,30 @@ import Grid from '@material-ui/core/Grid'
 
 
 const Opc=["WhatsApp","Envelope"];
-const Titles=[,,"351-112-45-23","someone@.com"]
-let ind=0;
+const Titles=["351-112-45-23","someone@.com"]
 
-const renderImgs  =(onClickImg)=>{  
-    
+
+const renderImgs  =()=>{  
+  let ind=0;
     const renderImg =(name) =>(
         <li className="Contact">
         <p className="Detail">
        
       <img src={"./Imgs/ImgsSocialM/"+name+".png"} key={name} className="SocialImg"></img>
       
-        {Titles[ind++]}
-     
+        {Titles[ind++]}     
       </p>
        </li>
        
      
     )
+
     return Opc.map(renderImg)
     
 }
     
 
-const Footer=(onClickImg)=>{
+const Footer=()=>{
     return(
 
         <Grid container direction="row" className="Footer">
@@ -36,11 +36,12 @@ const Footer=(onClickImg)=>{
           <hr></hr>
            <ul>
           
-          {renderImgs(onClickImg)}
+          {renderImgs()}
+        
 
 
           <li className="Contact">
-        <p className="Detail">
+        <p className="DetailL">
        
       <img src="./Imgs/ImgsSocialM/Location.png"  className="SocialImgL"></img>
         Domicilio Conocido

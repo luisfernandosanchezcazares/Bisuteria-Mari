@@ -18,7 +18,7 @@ const Buttons = ({text, type, name}) => {
     const history = useHistory();
 
     return(
-        <button className={type} key={name} onClick={(onClickHandle)=>{
+        <button className={type} key={name} onClick={()=>{
 
             history.push("/Details")
             localStorage.setItem('value',name);
