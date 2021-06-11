@@ -6,16 +6,16 @@ const Slider = () => {
         <Grid className="slider">
 			<ul>
 				<li>
-                    <img src="./Imgs/slider1.jpg"/>
+                    <img src="./Imgs/slider1.png"/>
                 </li>
 				<li>
-                    <img src="./Imgs/slider2.jpg"/>
+                    <img src="./Imgs/slider2.png"/>
                 </li>
 				<li>
-                    <img src="./Imgs/slider1.jpg"/>
+                    <img src="./Imgs/slider3.png"/>
                 </li>
 				<li>
-                    <img src="./Imgs/slider2.jpg"/>
+                    <img src="./Imgs/slider4.png"/>
                 </li>
 			</ul>
 		</Grid>
