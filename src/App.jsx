@@ -5,7 +5,7 @@ import {BrowserRouter as Router,
         Route} from 'react-router-dom'
 
 import MainPage from './Pages/MainPage'
-import Details from './Pages/Details'
+import Details from './Pages/Details.jsx'
 
 function App() {
   return (

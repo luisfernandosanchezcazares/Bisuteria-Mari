@@ -6,7 +6,7 @@ const Opc=["WhatsApp","Envelope"];
 const Titles=["351-112-45-23","someone@.com"]
 
 
-const renderImgs  =()=>{  
+const renderImgs =()=>{  
   let ind=0;
     const renderImg =(name) =>(
         <li className="Contact">
