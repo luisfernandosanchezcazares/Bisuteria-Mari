@@ -5,9 +5,11 @@ import Products from '../Components/Products';
 import Footer from '../Components/Footer';
 import FooterSm from '../Components/FooterSm';
 import DetailsImg from '../Components/DetailsImg';
+import Necklaces from './Necklaces'
 
 
 const MainPage = () => {
+  
     return (
         <>
           <Header/>

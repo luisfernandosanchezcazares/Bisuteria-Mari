@@ -31,9 +31,9 @@ const Header = () => {
                         <li><Link to = "/" onClick = {onClickHandle("/")}>Inicio</Link></li>
                         <li><Link to = "/Prueba" onClick = {onClickHandle("/Prueba")}>Categorias</Link>
                             <ul>
-                                <li><Link to = "/Prueba" onClick = {onClickHandle("/Prueba")}>Collares</Link></li>
-                                <li><Link to = "/Prueba" onClick = {onClickHandle("/Prueba")}>Aretes</Link></li>
-                                <li><Link to = "/Prueba" onClick = {onClickHandle("/Prueba")}>Pulseras</Link></li>
+                                <li><Link to = "/Necklaces" onClick = {onClickHandle("/Necklaces")}>Collares</Link></li>
+                                <li><Link to = "/Earrings" onClick = {onClickHandle("/Earrings")}>Aretes</Link></li>
+                                <li><Link to = "/Wristband" onClick = {onClickHandle("/Wristband")}>Pulseras</Link></li>
                             </ul>
                         </li>
                         <li><Link to = "/" onClick = {onClickHandle("/")}>Contacto</Link></li>

@@ -6,7 +6,7 @@ import App from '../Pages/AddProduct'
 const Prueba = () => {
     return (
         <>
-        <App></App>
+        
         Hola
         </>
     )

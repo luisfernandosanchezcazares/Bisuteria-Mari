@@ -5,6 +5,7 @@ import FooterSm from '../Components/FooterSm';
 import Slider from '../Components/Slider';
 import Products from '../Components/Products';
 import DetailsImg from '../Components/DetailsImg'
+import Necklaces  from './Necklaces';
 import '../Style/Bisuteria.css';
 import App from './AddProduct'
 
