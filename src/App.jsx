@@ -5,15 +5,12 @@ import {BrowserRouter as Router,
         Route} from 'react-router-dom'
 
 import MainPage from './Pages/MainPage'
-<<<<<<< Updated upstream
-import Details from './Pages/Details.jsx'
-
-=======
 import Details from './Pages/Details'
 import Necklaces from './Pages/Necklaces';
 import Earrings from './Pages/Earrings';
 import Wristband from './Pages/Wristband';
->>>>>>> Stashed changes
+import Questions from './Pages/Questions';
+import About from './Pages/About';
 function App() {
   return (
     <div className="App">
@@ -37,6 +34,16 @@ function App() {
           <Route path='/Wristband'>
             <Wristband></Wristband>
           </Route>
+
+          <Route path='/Questions'>
+           <Questions></Questions>
+          </Route>
+         
+          
+          <Route path='/About'>
+           <About></About>
+          </Route>
+          
           
         </Switch>              
       </Router>

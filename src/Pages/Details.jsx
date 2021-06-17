@@ -7,7 +7,7 @@ import Products from '../Components/Products';
 import DetailsImg from '../Components/DetailsImg'
 import Necklaces  from './Necklaces';
 import '../Style/Bisuteria.css';
-import App from './AddProduct'
+
 
 
 const Details = () => {
@@ -20,7 +20,7 @@ const Details = () => {
 
     <Footer></Footer>
     <FooterSm></FooterSm>
-   <App></App>
+   
      
         </>
   );

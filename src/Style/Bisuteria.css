@@ -324,12 +324,16 @@ ul {
     display: flex;
     padding-top: 20px;
    
+   
 }
 
 .Contact{
     width: auto;
     margin: 10px;
    text-align: left;
+   text-decoration: none;
+   color: white;
+  
   
 }
 
@@ -414,5 +418,24 @@ ul {
     background-color: black;
     background-image: url("./Background.png"); 
     padding: 150px 0 60px 0;
+    
+}
+.InfoCont{
+    background-color:#FFC1E9;
+    height: auto;
+    width: auto;
+    padding: 130px 0 20px 0;
+}
+.Info{
+    width: 80%;
+    height: auto;
+    padding-top: 5%;
+    padding-bottom: 100px;
+
+    background-color: black;
+    color: white;
+    opacity: 0.8;
+    border-radius: 50px;
+    
     
 }

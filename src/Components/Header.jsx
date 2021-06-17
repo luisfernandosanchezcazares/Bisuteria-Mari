@@ -37,7 +37,7 @@ const Header = () => {
                             </ul>
                         </li>
                         <li><Link to = "/" onClick = {onClickHandle("/")}>Contacto</Link></li>
-                        <li><Link to = "/" onClick = {onClickHandle("/")}>Acerca De</Link></li>
+                        <li><Link to = "/About" onClick = {onClickHandle("/About")}>Acerca De</Link></li>
                     </ul>
             </Grid>
         </Grid>

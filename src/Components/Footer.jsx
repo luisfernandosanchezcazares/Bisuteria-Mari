@@ -1,5 +1,8 @@
 import react from 'react'
 import Grid from '@material-ui/core/Grid'
+import {useHistory, Link} from 'react-router-dom'
+
+
 
 
 const Opc=["WhatsApp","Envelope"];
@@ -27,6 +30,12 @@ const renderImgs =()=>{
     
 
 const Footer=()=>{
+
+  const history = useHistory()
+
+  const onClickHandle = ({ruta}) => {
+      history.push(ruta)
+  }
     return(
 
         <Grid container direction="row" className="Footer">
@@ -56,7 +65,7 @@ const Footer=()=>{
            Ayuda
            <hr></hr> 
            <ul>
-              <li className="Contact">Preguntas Frecuentes</li> 
+              <li className="Contact"> <Link  className="Contact" to = "/Questions" onClick = {onClickHandle("/Questions")}> Preguntas Frecuentes</Link></li> 
             
            </ul>
            </Grid>
@@ -67,8 +76,8 @@ const Footer=()=>{
            Acceso Rápido 
            <hr></hr>
            <ul>
-              <li className="Contact">Acerca De</li> 
-              <li className="Contact">Datos extras que debe</li> 
+              <li className="Contact"> <Link  className="Contact" to = "/About" onClick = {onClickHandle("/About")}>Acerca De</Link></li> 
+               
            </ul>
            </Grid>
         </Grid>
