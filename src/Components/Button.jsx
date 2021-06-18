@@ -1,15 +1,8 @@
 import React,{useState} from 'react'
-import Footer from './Footer'
-import {BrowserRouter as Router,
-    Switch,
-    Route,
-    Link,
-    BrowserRouter,
-    Redirect
-    } from 'react-router-dom' 
- 
-import DetailsImg from './DetailsImg'
+
+
 import {useHistory} from 'react-router-dom'
+
 
 
 const Buttons = ({text, type, name}) => {
@@ -25,6 +18,8 @@ const Buttons = ({text, type, name}) => {
 
             
 }}>
+           
+           
             {text}
 
 

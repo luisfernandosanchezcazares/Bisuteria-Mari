@@ -1,5 +1,6 @@
 import react from 'react'
-
+import {IconContext} from 'react-icons'
+import RenderIcon,{validValues} from '../Components/RenderIcon'
 const FooterSm=()=>{
     return(
 
@@ -12,7 +13,9 @@ const FooterSm=()=>{
            <div className="Sm">
                <ul>
                    <li className="SmIcon">
-                   <img src="./Imgs/ImgsSocialM/WhatsApp.png"  className="SocialImg"></img>
+                   <IconContext.Provider direction="column" className="Ic" value={{ size:'25px'} }>
+                    <RenderIcon name={"whats"}></RenderIcon>
+                </IconContext.Provider>
                    </li>
 
                    <li className="SmIcon">

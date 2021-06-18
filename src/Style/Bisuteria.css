@@ -332,18 +332,36 @@ ul {
     margin: 10px;
    text-align: left;
    text-decoration: none;
-   color: white;
-  
+   color: white;  
+   padding-top: 5px ;   
   
 }
+
 
 .Detail{
     display: inline-block;
-    
+    margin: 0 0 0 10px;
+    width: auto;
+   font-size: 15px;
+   text-decoration: none;
+   color: white; 
+
+align-items: center;
+justify-content: center;   
     
 }
 
-.Contact:hover{
+.Detail:hover{
+    color:#FFC1E9;
+    
+    transition: all 1s;
+
+}
+
+
+
+
+.Contact:hover,.ContactText:hover{
     color:#FFC1E9;
 }
 
