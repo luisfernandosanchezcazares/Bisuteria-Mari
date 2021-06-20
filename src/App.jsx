@@ -11,6 +11,7 @@ import Earrings from './Pages/Earrings';
 import Wristband from './Pages/Wristband';
 import Questions from './Pages/Questions';
 import About from './Pages/About';
+import Ejemplo from './Pages/Ejemplo'
 function App() {
   return (
     <div className="App">
@@ -33,6 +34,9 @@ function App() {
 
           <Route path='/Wristband'>
             <Wristband></Wristband>
+          </Route>
+          <Route path='/Ejemplo'>
+            <Ejemplo/>
           </Route>
 
           <Route path='/Questions'>

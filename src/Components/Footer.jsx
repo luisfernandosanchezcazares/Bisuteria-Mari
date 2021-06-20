@@ -1,4 +1,4 @@
-import react from 'react'
+import React from 'react'
 import Grid from '@material-ui/core/Grid'
 import {useHistory, Link} from 'react-router-dom'
 import {IconContext} from 'react-icons'

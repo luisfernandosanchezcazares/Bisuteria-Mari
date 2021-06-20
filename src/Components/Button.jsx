@@ -4,8 +4,7 @@ import React,{useState} from 'react'
 import {useHistory} from 'react-router-dom'
 
 
-
-const Buttons = ({text, type, name}) => {
+const Buttons = ({text, type, name, id}) => {
 
     
     const history = useHistory();
@@ -14,7 +13,7 @@ const Buttons = ({text, type, name}) => {
         <button className={type} key={name} onClick={()=>{
 
             history.push("/Details")
-            localStorage.setItem('value',name);
+            localStorage.setItem('value',id);
 
             
 }}>

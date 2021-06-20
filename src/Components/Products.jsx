@@ -9,17 +9,17 @@ const Opc=["P1","P2","P3","P4","P5","P6","P7","P8","P9","P10","P11","P12","P13",
 
 const renderImgs  =()=>{   
     const renderImg =(name) =>(
-      <div className="Product"> 
-     
-        <img src={"./Imgs/"+name+".png"} className="ImgsP" key={name} alt="Imagen"></img>
-        <div className="proof">
-            <Buttons  type="btnVer" text="Ver Detalles" name={name}/>
-            
-            
-        </div>
+        <div className="Product">
 
-      
-    </div>
+            <img src={"./Imgs/" + name + ".png"} className="ImgsP" key={name} alt="Imagen"></img>
+            <div className="proof">
+                {/* <Buttons type="btnVer" text="Ver Detalles" name={name} /> */}
+
+
+            </div>
+
+
+        </div>
     
     )
     return Opc.map(renderImg)
