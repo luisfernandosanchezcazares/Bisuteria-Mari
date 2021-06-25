@@ -52,6 +52,23 @@
 	width: 100%;
 }
 
+.cajaBusqueda {
+    float: right;
+    height: 100%;
+    width: 100%;
+    margin-right: 20px;
+    text-align: right;
+}
+
+.cuadroTexto {
+    margin: 15px 10px;
+    height: 30px;
+    width: 250px;
+    outline: 0;
+    border: none;
+    border-radius: 0.25rem;
+    padding: 0px 10px;
+}
 
 @media (max-width: 599px) {
     .header {
@@ -72,9 +89,14 @@
 
     .cajaBusqueda {
         height: 100%;
-        width: 70%;
+        width: 100%;
         padding-right: 10%;
+        
+    }
 
+    .cuadroTexto {
+        margin: 0px;
+        margin-right: 20px;
     }
 }
 
@@ -99,6 +121,10 @@
     .eslogan {
         display: none;
         visibility: hidden;
+    }
+
+    .cuadroTexto {
+        margin: 20px 10px;
     }
 }
 
@@ -130,24 +156,6 @@
     display: inline-block;
     padding-top: 20px;
     height: 70%;
-}
-
-.cajaBusqueda {
-    float: right;
-    height: 100%;
-    width: 100%;
-    margin-right: 20px;
-    text-align: right;
-}
-
-.cuadroTexto {
-    margin: 15px 10px;
-    height: 30px;
-    width: 250px;
-    outline: 0;
-    border: none;
-    border-radius: 0.25rem;
-    padding: 0px 10px;
 }
 
 button {
@@ -186,6 +194,13 @@ ul {
     display: block;
 }
 
+.nav li div {
+    color: #FF60BD;
+    text-decoration: none;
+    padding: 5px 10px;
+    display: block;
+}
+
 .nav > li {
     text-align: center;
     float: left;
@@ -197,9 +212,15 @@ ul {
     color: white;
 }
 
+.nav li div:hover {
+    background-color: #FFC1E9;
+    color: white;
+}
+
 .nav li ul {
     display: none;
     position: absolute;
+    padding-left: 0px;
 }
 
 .nav li:hover > ul {

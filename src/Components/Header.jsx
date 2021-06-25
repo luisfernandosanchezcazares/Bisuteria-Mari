@@ -29,7 +29,7 @@ const Header = () => {
             <Grid className="headerDown" container item xs = {12}>
                     <ul className="nav">
                         <li><Link to = "/" onClick = {onClickHandle("/")}>Inicio</Link></li>
-                        <li><Link to = "/Prueba" onClick = {onClickHandle("/Prueba")}>Categorias</Link>
+                        <li><div>Categorias</div>
                             <ul>
                                 <li><Link to = "/Necklaces" onClick = {onClickHandle("/Necklaces")}>Collares</Link></li>
                                 <li><Link to = "/Earrings" onClick = {onClickHandle("/Earrings")}>Aretes</Link></li>
