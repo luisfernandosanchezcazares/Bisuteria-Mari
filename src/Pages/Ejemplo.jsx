@@ -1,8 +1,7 @@
 import React, {useState} from 'react'
 import Header from '../Components/Header'
 import Buttons from '../Components/Button'
-import db from '../firebase/auxi.js'
-import List from '@material-ui/core/List'
+import db from '../firebase/conexion'
 
 const vec = [];
 

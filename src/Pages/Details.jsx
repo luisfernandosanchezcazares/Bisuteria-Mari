@@ -5,8 +5,7 @@ import FooterSm from '../Components/FooterSm';
 import DetailsImg from '../Components/DetailsImg'
 
 import '../Style/Bisuteria.css';
-import App from './AddProduct'
-import db from '../firebase/auxi.js'
+import db from '../firebase/conexion'
 
 const Details = () => {
 
