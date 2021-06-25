@@ -44,18 +44,11 @@ const Products = () => {
         const vec = [];
         db.collection('Productos').get().then((querySnapshot) => {
             querySnapshot.forEach((doc) => {
-
-            // const obj = {
-            //     id: doc.id,
-            //     precio: doc.data().precio,
-            //     ruta: doc.data().ruta
-            // }
-            
-            vec.push({
-                id: doc.id,
-                precio: doc.data().precio,
-                ruta: doc.data().ruta
-            });
+                vec.push({
+                   id: doc.id,
+                   precio: doc.data().precio,
+                   ruta: doc.data().ruta
+                });
             
             });
             setList(vec)
