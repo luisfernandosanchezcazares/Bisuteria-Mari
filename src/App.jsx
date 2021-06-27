@@ -3,52 +3,48 @@ import './Style/Bisuteria.css';
 import {BrowserRouter as Router,
         Switch,
         Route} from 'react-router-dom'
-
 import MainPage from './Pages/MainPage'
 import Details from './Pages/Details'
-import Necklaces from './Pages/Necklaces';
-import Earrings from './Pages/Earrings';
-import Wristband from './Pages/Wristband';
-import Questions from './Pages/Questions';
-import About from './Pages/About';
-import Ejemplo from './Pages/Ejemplo'
+import Necklaces from './Pages/Necklaces'
+import Earrings from './Pages/Earrings'
+import Wristband from './Pages/Wristband'
+import Questions from './Pages/Questions'
+import About from './Pages/About'
+import Search from './Pages/Search'
+import Upload from './Pages/Upload'
+
 function App() {
   return (
-    <div className="App">
+    <div className = "App">
       <Router>
         <Switch>
           <Route exact path = '/'>
             <MainPage/>
           </Route>
           <Route path = '/Details'>
-         <Details></Details>
+            <Details/>
           </Route>
-
           <Route path = '/Necklaces'>
-         <Necklaces></Necklaces>
+            <Necklaces/>
           </Route>
-
-          <Route path='/Earrings'>
-            <Earrings></Earrings>
+          <Route path = '/Earrings'>
+            <Earrings/>
           </Route>
-
-          <Route path='/Wristband'>
-            <Wristband></Wristband>
+          <Route path = '/Wristband'>
+            <Wristband/>
           </Route>
-          <Route path='/Ejemplo'>
-            <Ejemplo/>
+          <Route path = '/Search'>
+            <Search/>
           </Route>
-
-          <Route path='/Questions'>
-           <Questions></Questions>
+          <Route path = '/Upload'>
+            <Upload/>
           </Route>
-         
-          
-          <Route path='/About'>
-           <About></About>
+          <Route path = '/Questions'>
+           <Questions/>
           </Route>
-          
-          
+          <Route path = '/About'>
+           <About/>
+          </Route>
         </Switch>              
       </Router>
     </div>

@@ -1,48 +1,44 @@
+import React, {useState, useEffect} from 'react'
 import Header from '../Components/Header';
 import Footer from '../Components/Footer';
 import FooterSm from '../Components/FooterSm';
 import Buttons from '../Components/Button'
-
+import ListItem from '../Components/ListItem'
 import '../Style/Bisuteria.css';
-
-const Opc=["P1","P9","P10","P18","P19","P20"];
-
-const renderImgs  =()=>{   
-  const renderImg =(name) =>(
-    <div className="Product"> 
-   
-      <img src={"./Imgs/"+name+".png"} className="ImgsP" key={name} alt="Imagen"></img>
-      <div className="proof">
-          <Buttons  type="btnVer" text="Ver Detalles" name={name}/>
-          
-          
-      </div>
-
-    
-  </div>
-  
-  )
-  return Opc.map(renderImg)
-  
-}
+import db from '../firebase/conexion'
 
 const Wristband = () => {
+
+  const [list, setList] = useState([])
+
+  useEffect(() => {
+    const vec = [];
+    db.collection('Productos').where("categoria", "==", "pulseras").get().then((querySnapshot) => {
+      querySnapshot.forEach((doc) => {
+          vec.push({
+            id: doc.id,
+            precio: doc.data().precio,
+            ruta: doc.data().ruta,
+            nombre: doc.data().nombre,
+            categoria: doc.data().categoria
+          })
+      })
+      setList(vec)
+    })
+  }, [])
     
   return (
     <>
-  
-     <Header></Header>
-     <div className="Products">
-           <div className="Title">Pulseras</div>
-          <div>
-          {renderImgs()}
-         </div>
-         
+      <Header />
+      <div className="Products">
+        <div className="Title">Pulseras</div>
+        <div>
+          {list.map((item) => <ListItem item={item}/>)}
+        </div>
       </div>
-    <Footer></Footer>
-    <FooterSm></FooterSm>
-  
-        </>
+      <Footer />
+      <FooterSm />
+    </>
   );
 }
 

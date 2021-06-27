@@ -1,7 +1,7 @@
 import React from 'react'
 import {useHistory} from 'react-router-dom'
 
-const Buttons = ({text, type, name, id}) => {
+const Button = ({text, type, name, id,}) => {
     const history = useHistory();
 
     return(
@@ -14,4 +14,4 @@ const Buttons = ({text, type, name, id}) => {
     );
 }
 
-export default Buttons
+export default Button

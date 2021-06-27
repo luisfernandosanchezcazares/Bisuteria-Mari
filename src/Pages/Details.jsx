@@ -1,41 +1,37 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import Header from '../Components/Header';
 import Footer from '../Components/Footer';
 import FooterSm from '../Components/FooterSm';
 import DetailsImg from '../Components/DetailsImg'
-
 import '../Style/Bisuteria.css';
 import db from '../firebase/conexion'
+import firebase from 'firebase'
 
 const Details = () => {
 
   const [item, setItem] = useState({});
 
-  const getDoc = () => {
+  useEffect(() => {
     const obj = db.collection('Productos').doc(localStorage.getItem("value"));
     obj.get().then((doc) => {
-          setItem(doc.data());
-  });
-  
-    // const nv = {
-    //   id: obj.id,
-    //   // precio: obj.data().precio,
-    //   // ruta: obj.data().ruta
-    // }
-    // console.log("mi objeto es " + nv.ruta);
-  }
+      setItem({
+        nombre: doc.data().nombre,
+        precio: doc.data().precio,
+        categoria: doc.data().categoria,
+        ruta: doc.data().ruta
+      })
+    });
+    const storageR = firebase.storage().refFromURL(`gs://bisuteria-mari.appspot.com/${item.ruta}`)
+    storageR.getDownloadURL().then((url) => item.ruta = url)
+  }, [])
     
   return (
-    <div /*onLoad = {getDoc()}*/>
-      {/* {getDoc("FlaKJuvPBPSWmNRS5DD8")} */}
-     <Header/>
-     {getDoc()}
-     <DetailsImg item = {item} />
-    <Footer/>
-    <FooterSm/>
-    {/* <App/> */}
-     
-        </div>
+    <>
+      <Header/>
+      <DetailsImg item = {item}/>
+      <Footer/>
+      <FooterSm/>
+    </>
   );
 }
 
