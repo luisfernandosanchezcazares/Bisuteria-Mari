@@ -21,7 +21,6 @@ const Header = () => {
                 <Grid container item xs = {12} sm = {8} md = {6} lg = {6}>
                     <div className="cajaBusqueda">
                         <input id = "inputBusqueda" className="cuadroTexto" placeholder="Ingresa el nombre del producto"/>
-                        {/* <Button type="botonBuscar" text="Buscar" /> */}
                         <button className = "botonBuscar" onClick = {() => {
                             history.push("/Search")
                             localStorage.setItem("search",document.getElementById("inputBusqueda").value)

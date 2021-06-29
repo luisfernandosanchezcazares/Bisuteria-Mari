@@ -21,8 +21,8 @@ const Details = () => {
         ruta: doc.data().ruta
       })
     });
-    const storageR = firebase.storage().refFromURL(`gs://bisuteria-mari.appspot.com/${item.ruta}`)
-    storageR.getDownloadURL().then((url) => item.ruta = url)
+    // const storageR = firebase.storage().refFromURL(`gs://bisuteria-mari.appspot.com/${item.ruta}`)
+    // storageR.getDownloadURL().then((url) => item.ruta = url)
   }, [])
     
   return (

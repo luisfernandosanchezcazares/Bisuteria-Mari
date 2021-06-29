@@ -18,7 +18,6 @@ const Products = () => {
                    nombre: doc.data().nombre,
                    categoria: doc.data().categoria
                 });
-            
             });
             setList(vec)
         });
@@ -29,7 +28,7 @@ const Products = () => {
             <div className="Products">
                 <div className="Title">PRODUCTOS</div>
                 <div>
-                    {list.map((item) => <ListItem item = {item}/>)}
+                    {list.map((item) => <ListItem item = {item} key = {item.nombre}/>)}
                 </div>
             </div>
         </>

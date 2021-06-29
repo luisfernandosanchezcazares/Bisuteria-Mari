@@ -10,7 +10,7 @@ const DetailsImg=({item})=>{
             <Grid container item md={5} xs="auto" className="DataNImg" alignContent="center" direction="column">
                 <h3>Nombre:</h3>
                 {item.nombre}
-                <h3> Precio:</h3>
+                <h3>Precio:</h3>
                 ${item.precio}.00
             </Grid>
         </Grid >

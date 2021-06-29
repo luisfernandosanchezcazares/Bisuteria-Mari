@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import {HiOutlineClipboardList,
+import {HiOutlineClipboardList, HiCheckCircle
         } from 'react-icons/hi'
 import {  MdHelpOutline,MdShoppingCart,MdToday,MdWatchLater,MdCallToAction,MdLocalShipping} from 'react-icons/md'
 import {AiFillShopping,AiFillEye,AiOutlineWhatsApp,AiTwotoneMail} from 'react-icons/ai'
@@ -22,8 +22,7 @@ const iconByName = {
     about: IoMdContact,
     computer: TiDeviceDesktop,
     star: TiStarFullOutline,
-
-    
+    check: HiCheckCircle
 }
 
 const renderIcon = name => {
@@ -41,7 +40,7 @@ const RenderIcon = ({name}) =>{
 
 export const validValues = [
     "schedule","questionMark","car","calendar","watch","creditcard","deliver","shoppingbag","view","whats",
-    "Email","location","about","computer","star"
+    "Email","location","about","computer","star","check"
 ]
 
 RenderIcon.propTypes = {
