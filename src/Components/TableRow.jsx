@@ -8,7 +8,7 @@ const TableRow = ({item, onClickHandle}) => {
     return (
         <tr className="tablaFila">
             <td>{item.nombre}</td>
-            <td>{item.precio}</td>
+            <td>${item.precio}.00</td>
             <td>{item.categoria}</td>
             <td><img width="50" src={item.url} className="ImgsP"/></td>
             <td>
