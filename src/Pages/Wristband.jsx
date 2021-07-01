@@ -2,7 +2,6 @@ import React, {useState, useEffect} from 'react'
 import Header from '../Components/Header';
 import Footer from '../Components/Footer';
 import FooterSm from '../Components/FooterSm';
-import Buttons from '../Components/Button'
 import ListItem from '../Components/ListItem'
 import '../Style/Bisuteria.css';
 import db from '../firebase/conexion'
@@ -29,15 +28,15 @@ const Wristband = () => {
     
   return (
     <>
-      <Header />
+      <Header/>
       <div className="Products">
         <div className="Title">Pulseras</div>
         <div>
-          {list.map((item) => <ListItem item={item}/>)}
+          {list.map((item) => <ListItem item = {item}/>)}
         </div>
       </div>
-      <Footer />
-      <FooterSm />
+      <Footer/>
+      <FooterSm/>
     </>
   );
 }

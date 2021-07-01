@@ -18,11 +18,9 @@ const Details = () => {
         nombre: doc.data().nombre,
         precio: doc.data().precio,
         categoria: doc.data().categoria,
-        ruta: doc.data().ruta
+        url: doc.data().url
       })
     });
-    // const storageR = firebase.storage().refFromURL(`gs://bisuteria-mari.appspot.com/${item.ruta}`)
-    // storageR.getDownloadURL().then((url) => item.ruta = url)
   }, [])
     
   return (

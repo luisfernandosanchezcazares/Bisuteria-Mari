@@ -4,9 +4,9 @@ import Button from './Button'
 const ListItem = ({item}) => {
     return(
         <div className="Product" >
-            <img src = {item.ruta} className = "ImgsP" key = {item.ruta} alt = "Imagen"/> 
+            <img src = {item.url} className = "ImgsP" key = {item.url} alt = "Imagen"/> 
             <div className="proof">
-                <Button type="btnVer" text="Ver Detalles" name={item.ruta} id = {item.id}/>
+                <Button type="btnVer" text="Ver Detalles" name={item.url} id = {item.id}/>
             </div>
         </div>
     );

@@ -445,7 +445,7 @@ justify-content: center;
 
 .DataNImg{
     height: auto;
-    background-color:#FFC1E9;
+    background-color:#ffa2e8;
     color:white;
     height: 300px;  
     border-radius: 10px;
@@ -456,7 +456,7 @@ justify-content: center;
 .General{
     background-color: black;
     background-image: url("./Background.png"); 
-    padding: 150px 0 60px 0;
+    padding: 160px 0 60px 0;
 }
     
 .InfoCont{
@@ -496,12 +496,21 @@ justify-content: center;
     border-radius: 50px; 
 }
 
-.cajaInsercion {
+.cajaForm {
+    background-color: #FFC1E9;
+    border-radius: 15px;
+    width: 400px;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 15px 0px;
+}
+
+.cajaTablaForm {
+    text-align: center;
     background-color: #FFC1E9;
     border-radius: 15px;
     width: 90%;
-    margin: 0px 5%;
-    padding-bottom: 15px;
+    padding: 15px 0px;
 }
 
 .seleccion {
@@ -510,18 +519,20 @@ justify-content: center;
     border-radius: 2.5px;
 }
 
-.subirImagen {
+.ocultar {
     display: none;
 }
 
 .botonSubirImagen {
     padding: 5px 10px;
+    width: auto;
     color: white;
     background-color: #FF60BD;
     border-radius: 4px;
     font-size: 15px;
     font-weight: bold;
     transition: all 300ms;
+    border: none;
 }
 
 .botonSubirImagen:hover {
@@ -531,4 +542,74 @@ justify-content: center;
 .imgUpload {
     border-radius: 5px;
     margin: 10px 0px 20px 0px;
+}
+
+.inputTexto {
+    margin: 15px 10px;
+    height: 30px;
+    width: 250px;
+    outline: 0;
+    border: none;
+    border-radius: 0.25rem;
+    padding: 0px 10px;
+}
+
+.tablaProds {
+    width: 95%;
+    margin: 0px 2.5%;
+    background-color: rgb(202, 202, 202);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.tablaEnc {
+    background-color: #FF5FD6;
+    color: white;
+    font-weight: 600;
+    width: 100%;
+}
+
+.tablaEnc td {
+    padding: 2px 5px;
+}
+
+.tablaFila {
+    background-color: white;
+    font-weight: 500;
+}
+
+.buttonDelete {
+    background-color: #FF2B2B;
+    width: 40px;
+    height: 40px;
+    padding-top: 5px;
+    border-radius: 20px;
+    border: none;
+    transition: all 400ms;
+}
+
+.buttonDelete:hover{
+    background-color: #FF0C0C;
+    transform: scale(1.1);
+}
+
+.inputEdit {
+    width: 90%;
+    height: 25px;
+    outline: 0;
+    border: 1px #5F5F5F solid;
+    border-radius: 0.25rem;
+    padding: 0px 3%;
+}
+
+.tituloForm {
+    display: inline-block;
+    text-align: center;
+    color: white;
+    background-color: black;
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 0px 10px;
+    margin: 10px 5px;
+    width: 200px;
 }

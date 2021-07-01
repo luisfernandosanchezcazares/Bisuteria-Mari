@@ -6,5 +6,5 @@ firebase.initializeApp({
     authDomain: 'bisuteria-mari.firebaseapp.com',
     projectId: 'bisuteria-mari'
 });
-  
+
 export default firebase.firestore();

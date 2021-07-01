@@ -1,5 +1,4 @@
 import React, {useState, useEffect} from 'react'
-import Grid from '@material-ui/core/Grid'
 import ListItem from '../Components/ListItem'
 import db from '../firebase/conexion'
 
@@ -14,7 +13,7 @@ const Products = () => {
                 vec.push({
                    id: doc.id,
                    precio: doc.data().precio,
-                   ruta: doc.data().ruta,
+                   url: doc.data().url,
                    nombre: doc.data().nombre,
                    categoria: doc.data().categoria
                 });
