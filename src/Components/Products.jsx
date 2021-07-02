@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import ListItem from '../Components/ListItem'
 import db from '../firebase/conexion'
+import Skeleton from '@material-ui/lab/Skeleton'
 
 const Products = () => {
 
@@ -26,6 +27,7 @@ const Products = () => {
         <>
             <div className="Products">
                 <div className="Title">PRODUCTOS</div>
+                
                 <div>
                     {list.map((item) => <ListItem item = {item} key = {item.nombre}/>)}
                 </div>

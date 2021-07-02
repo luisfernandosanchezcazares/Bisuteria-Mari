@@ -2,11 +2,12 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import {HiOutlineClipboardList, HiCheckCircle
         } from 'react-icons/hi'
-import {  MdHelpOutline,MdShoppingCart,MdToday,MdWatchLater,MdCallToAction,MdLocalShipping} from 'react-icons/md'
+import {  MdHelpOutline,MdShoppingCart,MdToday,MdWatchLater,MdCallToAction,MdLocalShipping,MdDescription} from 'react-icons/md'
 import {AiFillShopping,AiFillEye,AiOutlineWhatsApp,AiTwotoneMail} from 'react-icons/ai'
 import {IoIosPin,IoMdContact} from 'react-icons/io'
 import {TiDeviceDesktop,TiStarFullOutline} from 'react-icons/ti'
 import {BsTrash} from 'react-icons/bs'
+import {FcCurrencyExchange,FcKindle} from 'react-icons/fc'
 const iconByName = {
     schedule: HiOutlineClipboardList,
     questionMark:MdHelpOutline,
@@ -24,7 +25,11 @@ const iconByName = {
     computer: TiDeviceDesktop,
     star: TiStarFullOutline,
     check: HiCheckCircle,
-    delete: BsTrash
+    delete: BsTrash,
+    price: FcCurrencyExchange,
+    name: FcKindle,
+
+    
 }
 
 const renderIcon = name => {
@@ -42,7 +47,7 @@ const RenderIcon = ({name}) =>{
 
 export const validValues = [
     "schedule","questionMark","car","calendar","watch","creditcard","deliver","shoppingbag","view","whats",
-    "Email","location","about","computer","star","check","delete"
+    "Email","location","about","computer","star","check","delete","price","name"
 ]
 
 RenderIcon.propTypes = {

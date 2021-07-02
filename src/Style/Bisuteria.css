@@ -372,6 +372,28 @@ justify-content: center;
     
 }
 
+.data{
+    width: auto;
+    height: auto;
+
+   
+    color: black;
+}
+
+.Icon3{
+
+    width: auto;
+    height: auto;
+}
+
+.DataProduct{
+
+    width: auto;
+    height: auto;
+   
+    margin-top: 50px;
+}
+
 .Detail:hover{
     color:#FFC1E9;
     
@@ -449,6 +471,9 @@ justify-content: center;
     color:white;
     height: 300px;  
     border-radius: 10px;
+    font-size: larger;
+    font-weight: bold;
+
 
 
 }

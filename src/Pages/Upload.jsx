@@ -6,6 +6,7 @@ import FooterSm from '../Components/FooterSm'
 
 const Upload = () => {
     return (
+        
         <>
             <Header/>
             <Form/>
