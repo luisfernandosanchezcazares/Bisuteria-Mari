@@ -10,8 +10,8 @@ const DetailsImg=({item})=>{
             <Grid container item alignItems="center" direction="column" md={6} xs="auto">
 
                 {
-                    item ?
-                <img src = {item.ruta} className="ImgsP" alt="Imagen"/>
+                    item.url ?
+                <img src = {item.url} className="ImgsP" alt="Imagen"/>
                
                    :
                    <Skeleton 
