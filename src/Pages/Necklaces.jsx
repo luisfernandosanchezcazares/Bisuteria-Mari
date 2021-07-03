@@ -17,7 +17,7 @@ const Necklaces = () => {
                 vec.push({
                    id: doc.id,
                    precio: doc.data().precio,
-                   ruta: doc.data().ruta,
+                   url: doc.data().url,
                    nombre: doc.data().nombre,
                    categoria: doc.data().categoria
                 });
@@ -32,7 +32,7 @@ const Necklaces = () => {
       <div className="Products">
         <div className="Title">COLLARES</div>
         <div>
-          {list.map((item) => <ListItem item = {item}/>)}
+          {list.map((item) => <ListItem item = {item} key={item.nombre}/>)}
         </div>
       </div>
       <Footer />

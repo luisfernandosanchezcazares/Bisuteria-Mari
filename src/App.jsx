@@ -47,7 +47,7 @@ function App() {
            <About/>
           </Route>
           <Route path = '/LogIn'>
-           <LogIn></LogIn>
+           <LogIn/>
           </Route>
         </Switch>              
       </Router>

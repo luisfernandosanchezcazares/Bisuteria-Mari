@@ -26,6 +26,7 @@ const Form = () => {
             db.collection('Productos').get().then((querySnapshot) => {
                 querySnapshot.forEach((doc) => {
                     vec.push({
+                        id: doc.id,
                         nombre: doc.data().nombre,
                         categoria: doc.data().categoria,
                         precio: doc.data().precio,

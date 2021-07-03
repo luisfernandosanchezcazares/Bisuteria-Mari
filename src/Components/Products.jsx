@@ -1,7 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import ListItem from '../Components/ListItem'
 import db from '../firebase/conexion'
-import Skeleton from '@material-ui/lab/Skeleton'
 
 const Products = () => {
 

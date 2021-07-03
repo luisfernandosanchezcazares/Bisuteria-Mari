@@ -8,32 +8,23 @@ import db from '../firebase/conexion'
 const Search = () => {
 
     const [list, setList] = useState([])
-    const [cad, setCad] = useState("")
 
     useEffect(() => {
         const vec = [];
-        const val = localStorage.getItem("search");
+        const cadInput = localStorage.getItem("search").toLowerCase();
         db.collection('Productos').get().then((querySnapshot) => {
             querySnapshot.forEach((doc) => {
-            
-            // setCad(doc.data().nombre)
-            // const x = localStorage.getItem('search');
-
-            // console.log(cad.includes(x));
-
-            // if(cad.includes(x))
-            // {
-            //     vec.push({
-            //        id: doc.id,
-            //        precio: doc.data().precio,
-            //        ruta: doc.data().ruta,
-            //        nombre: doc.data().nombre,
-            //        categoria: doc.data().categoria
-            //     })
-            //     console.log("Se añadio")
-            // }
+                const name = [doc.data().nombre].toString().toLowerCase()
+                if(name.includes(cadInput))
+                    vec.push({
+                        id: doc.id,
+                        precio: doc.data().precio,
+                        url: doc.data().url,
+                        nombre: doc.data().nombre,
+                        categoria: doc.data().categoria
+                    })
             })
-            // setList(vec)
+            setList(vec)
         })
     })
 
