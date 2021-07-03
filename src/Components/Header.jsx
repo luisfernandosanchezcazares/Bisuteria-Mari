@@ -1,15 +1,17 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Grid from '@material-ui/core/Grid'
 import {useHistory, Link} from 'react-router-dom'
 
 const Header = () => {
+
+    const [sesion, setSesion] = useState(sessionStorage.getItem('userName') === null)
 
     const history = useHistory()
 
     const onClickHandle = ({ruta}) => {
         history.push(ruta)
     }
-    
+
     return(
         <Grid className="header" container justify = "center" column spacing = {2}>
             <Grid className="headerUp" container item xs = {12}>
@@ -38,8 +40,19 @@ const Header = () => {
                                 <li><Link to = "/Wristband" onClick = {onClickHandle("/Wristband")}>Pulseras</Link></li>
                             </ul>
                         </li>
-                        <li><Link to = "/" onClick = {onClickHandle("/")}>Contacto</Link></li>
                         <li><Link to = "/About" onClick = {onClickHandle("/About")}>Acerca De</Link></li>
+                        {
+                            sesion ?
+                                <li><Link to = "/LogIn" onClick = {onClickHandle("/LogIn")}>Ingresar</Link></li>
+                            :
+                            <>
+                                <li><Link to="/Upload" onClick = {onClickHandle("/Upload")}>Administrar</Link></li>
+                                <li><Link to="/" onClick={() => {
+                                    sessionStorage.removeItem('userName')
+                                    setSesion(!sesion)
+                                }}>Desconectar</Link></li>
+                            </>
+                        }
                     </ul>
             </Grid>
         </Grid>

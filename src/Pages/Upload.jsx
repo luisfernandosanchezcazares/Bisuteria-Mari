@@ -11,7 +11,7 @@ const Upload = () => {
 
     useEffect(() => {
         console.log(sessionStorage.getItem('userName'))
-        if(sessionStorage.getItem('userName') === '')
+        if(sessionStorage.getItem('userName') === null)
             history.push('/LogIn')
     }, [])
 
