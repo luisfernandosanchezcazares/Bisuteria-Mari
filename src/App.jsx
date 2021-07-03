@@ -12,6 +12,7 @@ import Questions from './Pages/Questions'
 import About from './Pages/About'
 import Search from './Pages/Search'
 import Upload from './Pages/Upload'
+import LogIn from './Pages/LogIn'
 
 function App() {
   return (
@@ -44,6 +45,9 @@ function App() {
           </Route>
           <Route path = '/About'>
            <About/>
+          </Route>
+          <Route path = '/LogIn'>
+           <LogIn></LogIn>
           </Route>
         </Switch>              
       </Router>

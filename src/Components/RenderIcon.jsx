@@ -6,7 +6,7 @@ import {  MdHelpOutline,MdShoppingCart,MdToday,MdWatchLater,MdCallToAction,MdLoc
 import {AiFillShopping,AiFillEye,AiOutlineWhatsApp,AiTwotoneMail} from 'react-icons/ai'
 import {IoIosPin,IoMdContact} from 'react-icons/io'
 import {TiDeviceDesktop,TiStarFullOutline} from 'react-icons/ti'
-import {BsTrash} from 'react-icons/bs'
+import {BsTrash,BsFillPersonFill} from 'react-icons/bs'
 import {FcCurrencyExchange,FcKindle} from 'react-icons/fc'
 const iconByName = {
     schedule: HiOutlineClipboardList,
@@ -28,7 +28,7 @@ const iconByName = {
     delete: BsTrash,
     price: FcCurrencyExchange,
     name: FcKindle,
-
+    user: BsFillPersonFill,
     
 }
 
@@ -47,7 +47,7 @@ const RenderIcon = ({name}) =>{
 
 export const validValues = [
     "schedule","questionMark","car","calendar","watch","creditcard","deliver","shoppingbag","view","whats",
-    "Email","location","about","computer","star","check","delete","price","name"
+    "Email","location","about","computer","star","check","delete","price","name","user"
 ]
 
 RenderIcon.propTypes = {
