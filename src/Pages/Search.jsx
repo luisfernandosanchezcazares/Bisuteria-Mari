@@ -8,14 +8,16 @@ import db from '../firebase/conexion'
 const Search = () => {
 
     const [list, setList] = useState([])
+    const [update, setUpdate] = useState(true)
 
     useEffect(() => {
         const vec = [];
+
         const cadInput = localStorage.getItem("search").toLowerCase();
         db.collection('Productos').get().then((querySnapshot) => {
             querySnapshot.forEach((doc) => {
                 const name = [doc.data().nombre].toString().toLowerCase()
-                if(name.includes(cadInput))
+                if (name.includes(cadInput))
                     vec.push({
                         id: doc.id,
                         precio: doc.data().precio,
@@ -26,7 +28,10 @@ const Search = () => {
             })
             setList(vec)
         })
-    })
+        console.log('ejecute')
+        setTimeout(() => setUpdate(!update), 2000)
+        
+    }, [update])
 
     return (
         <>

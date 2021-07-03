@@ -1,5 +1,4 @@
 import React from 'react';
-import Button from './Button';
 import Grid from '@material-ui/core/Grid'
 import {useHistory, Link} from 'react-router-dom'
 
@@ -22,8 +21,8 @@ const Header = () => {
                     <div className="cajaBusqueda">
                         <input id = "inputBusqueda" className="cuadroTexto" placeholder="Ingresa el nombre del producto"/>
                         <button className = "botonBuscar" onClick = {() => {
+                            localStorage.setItem('search',document.getElementById("inputBusqueda").value)
                             history.push("/Search")
-                            localStorage.setItem("search",document.getElementById("inputBusqueda").value)
                         }}>Buscar</button>
                     </div> 
                     
