@@ -43,14 +43,14 @@ const Header = () => {
                         <li><Link to = "/About" onClick = {onClickHandle("/About")}>Acerca De</Link></li>
                         {
                             sesion ?
-                                <li><Link to = "/LogIn" onClick = {onClickHandle("/LogIn")}>Ingresar</Link></li>
+                                <li><Link to = "/LogIn" onClick = {onClickHandle("/LogIn")}>Iniciar Sesión</Link></li>
                             :
                             <>
                                 <li><Link to="/Upload" onClick = {onClickHandle("/Upload")}>Administrar</Link></li>
                                 <li><Link to="/" onClick={() => {
                                     sessionStorage.removeItem('userName')
                                     setSesion(!sesion)
-                                }}>Desconectar</Link></li>
+                                }}>Cerrar Sesión</Link></li>
                             </>
                         }
                     </ul>
