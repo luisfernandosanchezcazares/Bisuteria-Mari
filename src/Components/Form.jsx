@@ -50,6 +50,7 @@ const Form = () => {
         if(nombre === '')
         {
             console.log("El campo nombre no puede estar vacio")
+            
         }
         else
             if(precio === '') 

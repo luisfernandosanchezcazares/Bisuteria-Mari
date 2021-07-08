@@ -4,12 +4,14 @@ import {IconContext} from 'react-icons'
 import RenderIcon from '../Components/RenderIcon'
 import db from '../firebase/conexion'
 import {useHistory, Link} from 'react-router-dom'
+import Alert from '@material-ui/lab/Alert'
 
 const LogInForm = () => {
 
     const history = useHistory()
 
     const [user, setUser] = useState({})
+    const [error, setError] = useState("")
 
     useEffect(() => {
         db.collection('Users').get().then((querySnapshot) => {
@@ -22,20 +24,20 @@ const LogInForm = () => {
         const clave = document.getElementById('Clave').value
 
         if(usuario === '')
-            console.log('El nombre de usuario no puede estar vacio')
+            setError('El nombre de usuario no puede estar vacio')
         else
             if(clave === '')
-                console.log('La contraseña no puede estar vacias')
+                setError('La contraseña no puede estar vacia')
             else
                 if(usuario !== user.usuario)
-                    console.log('El nombre de usuario no existe')
+                    setError('El nombre de usuario no existe')
                 else
                     if(clave !== user.clave)
-                        console.log('La contraseña esta incorrecta')
+                        setError('La contraseña esta incorrecta')
                     else
                     {
                         sessionStorage.setItem('userName', usuario)
-                        history.push('/Upload')
+                        // history.push('/Upload')
                     }
     }
 
@@ -51,9 +53,7 @@ const LogInForm = () => {
                 <IconContext.Provider direction="column" value={{ size: '65px' }}>
                     <RenderIcon name={"user"}></RenderIcon>
                 </IconContext.Provider> <br/>
-
-                {/* <button onClick={() => console.log(user)}>presme</button> */}
-
+                { error !== '' ? <Alert severity="error" className >{error}</Alert> : <></> }
                 <input id="Usuario" className="inputTexto2" placeholder="Nombre Usuario" /><br />
                 <input id="Clave" className="inputTexto2" type="password" placeholder="Contraseña" /><br />
                 <button className="Accept" onClick={iniciarSesion}>Aceptar</button>
