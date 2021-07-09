@@ -37,7 +37,7 @@ const LogInForm = () => {
                     else
                     {
                         sessionStorage.setItem('userName', usuario)
-                        // history.push('/Upload')
+                        history.push('/Upload')
                     }
     }
 

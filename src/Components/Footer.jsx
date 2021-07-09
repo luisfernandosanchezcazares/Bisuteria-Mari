@@ -8,7 +8,7 @@ import RenderIcon,{validValues} from '../Components/RenderIcon'
 
 
 const Opc=["whats","Email","location"];
-const Titles=["351-112-45-23","someone@.com","Domicilio Conocido"]
+const Titles=["353-109-91-01","bisuteriamari2021@gmail.com","María de Jesús Castañeda #10"]
 
 
 const renderImgs =()=>{  

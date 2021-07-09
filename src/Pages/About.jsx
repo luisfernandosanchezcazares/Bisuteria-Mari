@@ -21,8 +21,9 @@ const About = () => {
             <h3>Bisutería Mary</h3> 
             <IconContext.Provider direction="column" value={{ size:'25px', color: 'yellow'} }>
                     <RenderIcon name={"star"}></RenderIcon>
-                </IconContext.Provider>
-            <p>Bisutería Mary es la mejor opcion para ti en cuestion  de calidad y precio</p>
+              </IconContext.Provider>
+            <p>A Bisutería Mary le importa tu elegancia trabajamos para ofrecerte los mejores <br/> productos
+               en calidad y precio, tenemos 8 años ofreciendo la mejor bisuteria.</p>
            <h3>Desarrolladores</h3>
            <IconContext.Provider direction="column" value={{ size:'20px'} }>
                     <RenderIcon name={"computer"}></RenderIcon>

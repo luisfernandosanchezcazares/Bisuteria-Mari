@@ -4,7 +4,7 @@ import FooterSm from '../Components/FooterSm';
 import { Typography } from '@material-ui/core';
 import Grid from '@material-ui/core/Grid'
 import {IconContext} from 'react-icons'
-import RenderIcon,{validValues} from '../Components/RenderIcon'
+import RenderIcon from '../Components/RenderIcon'
 
 
 import '../Style/Bisuteria.css';
@@ -29,7 +29,7 @@ const Questions = () => {
            <IconContext.Provider value={{size:'1.3em'}}>
                     <RenderIcon name={"car"}></RenderIcon>
                 </IconContext.Provider>
-           <p >Para comprar debe mandar mensaje al sig número de what's app 351-112-45-23, </p>
+           <p >Para comprar debe mandar mensaje al sig número de what's app 353-109-91-01, </p>
           
            <p> para ponerso de acuerdo con la vendedora para la entrega y pago del producto.</p>
            
@@ -56,6 +56,11 @@ const Questions = () => {
                </IconContext.Provider>
            <p>Por el momento las entregas solo son en Jiquilpan Michoacan.</p>
 
+           <h3>¿Para que sirve crear una cuenta de usuario?</h3>
+            <IconContext.Provider direction="column" value={{ size: '25px' }}>
+              <RenderIcon name={"user"}></RenderIcon>
+            </IconContext.Provider>
+            <p>Para que el usuario reciba correos indicando de la nueva mercancia o ofertas de la página.</p>
 
            </Typography>
           
