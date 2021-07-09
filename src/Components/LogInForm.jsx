@@ -6,6 +6,7 @@ import db from '../firebase/conexion'
 import {useHistory, Link} from 'react-router-dom'
 import Alert from '@material-ui/lab/Alert'
 
+
 const LogInForm = () => {
 
     const history = useHistory()
@@ -53,10 +54,16 @@ const LogInForm = () => {
                 <IconContext.Provider direction="column" value={{ size: '65px' }}>
                     <RenderIcon name={"user"}></RenderIcon>
                 </IconContext.Provider> <br/>
-                { error !== '' ? <Alert severity="error" className >{error}</Alert> : <></> }
+                
+                { 
+                error !== '' ? <Alert severity="error" className >{error}</Alert> : <></> }
                 <input id="Usuario" className="inputTexto2" placeholder="Nombre Usuario" /><br />
                 <input id="Clave" className="inputTexto2" type="password" placeholder="Contraseña" /><br />
                 <button className="Accept" onClick={iniciarSesion}>Aceptar</button>
+
+                {
+                    <Link to="SignUp" ><Alert severity="info" className="Alert" >No tienes  cuenta registrate</Alert></Link> 
+                }
             </Grid>
         </Grid>
     )

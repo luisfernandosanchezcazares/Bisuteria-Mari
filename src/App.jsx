@@ -13,6 +13,7 @@ import About from './Pages/About'
 import Search from './Pages/Search'
 import Upload from './Pages/Upload'
 import LogIn from './Pages/LogIn'
+import SignUpUser from './Pages/SignUpUser';
 
 function App() {
   return (
@@ -48,6 +49,10 @@ function App() {
           </Route>
           <Route path = '/LogIn'>
            <LogIn/>
+          </Route>
+
+          <Route path = '/SignUp'>
+           <SignUpUser/>
           </Route>
         </Switch>              
       </Router>
