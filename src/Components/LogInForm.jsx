@@ -12,11 +12,19 @@ const LogInForm = () => {
     const history = useHistory()
 
     const [user, setUser] = useState({})
+    const [users, setUsers] = useState([])
     const [error, setError] = useState("")
 
     useEffect(() => {
+        const v = []
         db.collection('Users').get().then((querySnapshot) => {
-            querySnapshot.forEach((doc) => setUser({usuario: doc.data().usuario, clave: doc.data().clave}))
+            querySnapshot.forEach((doc) => {
+                v.push({
+                    usuario: doc.data().usuario,
+                    clave: doc.data().clave
+                })
+            })
+            setUsers(v)
         })
     }, [])
 
@@ -30,16 +38,22 @@ const LogInForm = () => {
             if(clave === '')
                 setError('La contraseña no puede estar vacia')
             else
-                if(usuario !== user.usuario)
-                    setError('El nombre de usuario no existe')
+                if(!userExists(usuario, clave))
+                    setError('El usuario no existe o la clave es incorrecta')
                 else
-                    if(clave !== user.clave)
-                        setError('La contraseña esta incorrecta')
-                    else
-                    {
-                        sessionStorage.setItem('userName', usuario)
+                {
+                    sessionStorage.setItem('userName', usuario)
                         history.push('/Upload')
-                    }
+                }
+    }
+
+    const userExists = (usu, pass) => {
+        let exists = false
+        users.map((index) => {
+            if(usu === index.usuario && pass === index.clave)
+                exists = true;
+        })
+        return exists
     }
 
     return (
@@ -55,15 +69,14 @@ const LogInForm = () => {
                     <RenderIcon name={"user"}></RenderIcon>
                 </IconContext.Provider> <br/>
                 
-                { 
-                error !== '' ? <Alert severity="error" className >{error}</Alert> : <></> }
+                { error !== '' ? <Alert severity="error" className >{error}</Alert> : <></> }
                 <input id="Usuario" className="inputTexto2" placeholder="Nombre Usuario" /><br />
                 <input id="Clave" className="inputTexto2" type="password" placeholder="Contraseña" /><br />
                 <button className="Accept" onClick={iniciarSesion}>Aceptar</button>
 
-                {
-                    <Link to="SignUp" ><Alert severity="info" className="Alert" >No tienes  cuenta registrate</Alert></Link> 
-                }
+            
+                <Link to="SignUp" ><Alert severity="info" className="Alert" >No tienes  cuenta registrate</Alert></Link>
+                
             </Grid>
         </Grid>
     )

@@ -10,9 +10,11 @@ const Upload = () => {
     const history = useHistory()
 
     useEffect(() => {
-        console.log(sessionStorage.getItem('userName'))
         if(sessionStorage.getItem('userName') === null)
             history.push('/LogIn')
+        else
+            if(sessionStorage.getItem('userName') !== 'Admin Bisuteria')
+                history.push('/')
     }, [])
 
     return (      

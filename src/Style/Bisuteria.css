@@ -125,6 +125,12 @@ ul {
     color: white;
 }
 
+.config {
+    float: left;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
 @media (max-width: 599px) {
     .header {
         height: 155px;
@@ -149,11 +155,12 @@ ul {
     .cajaBusqueda {
         height: 100%;
         width: 100%;
-        padding-right: 10%;
+        padding-right: 5%;
         
     }
 
     .cuadroTexto {
+        width: 50%;
         margin: 0px;
         margin-right: 20px;
     }

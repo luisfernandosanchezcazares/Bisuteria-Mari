@@ -1,6 +1,8 @@
 import React, {useState} from 'react';
 import Grid from '@material-ui/core/Grid'
 import {useHistory, Link} from 'react-router-dom'
+import {IconContext} from 'react-icons'
+import RenderIcon from '../Components/RenderIcon'
 
 const Header = () => {
 
@@ -17,7 +19,7 @@ const Header = () => {
             <Grid className="headerUp" container item xs = {12}>
                 <Grid container justify = "left" container item xs = {12} sm = {4} md = {6} lg = {6}>
                     <img height="50px" src="./Imgs/logo.png" className="Logo"/>
-                    <p className ="eslogan">Luce elegante, luce genial</p>
+                    <p className="eslogan">Luce elegante, luce genial</p>
                 </Grid>
                 <Grid container item xs = {12} sm = {8} md = {6} lg = {6}>
                     <div className="cajaBusqueda">
@@ -46,11 +48,27 @@ const Header = () => {
                                 <li><Link to = "/LogIn" onClick = {onClickHandle("/LogIn")}>Iniciar Sesión</Link></li>
                             :
                             <>
-                                <li><Link to="/Upload" onClick = {onClickHandle("/Upload")}>Administrar</Link></li>
-                                <li><Link to="/" onClick={() => {
-                                    sessionStorage.removeItem('userName')
-                                    setSesion(!sesion)
-                                }}>Cerrar Sesión</Link></li>
+                                <li>
+                                    <Link to="/" onClick={() => {
+                                        sessionStorage.removeItem('userName')
+                                        setSesion(!sesion)
+                                    }
+                                    }>
+                                        Cerrar Sesión
+                                    </Link>
+                                </li>
+
+                                {
+                                    sessionStorage.getItem('userName') !== null && sessionStorage.getItem('userName') === 'Admin Bisuteria' 
+                                    ?
+                                        <Link to="/Upload" className="config" onClick={onClickHandle("/Upload")}>
+                                            <IconContext.Provider direction="column" value={{ size: '1.25em', color: '#FF60BD' }}>                                        <RenderIcon name={"admin"}></RenderIcon>
+                                            </IconContext.Provider>
+                                        </Link>
+                                    :
+                                    <></>
+                                }
+                                
                             </>
                         }
                     </ul>

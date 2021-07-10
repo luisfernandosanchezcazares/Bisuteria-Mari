@@ -50,7 +50,6 @@ function App() {
           <Route path = '/LogIn'>
            <LogIn/>
           </Route>
-
           <Route path = '/SignUp'>
            <SignUpUser/>
           </Route>
