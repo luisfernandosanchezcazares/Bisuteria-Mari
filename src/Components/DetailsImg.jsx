@@ -1,7 +1,7 @@
 import React from 'react'
 import Grid from '@material-ui/core/Grid'
 import {IconContext} from 'react-icons'
-import RenderIcon,{validValues} from '../Components/RenderIcon'
+import RenderIcon from '../Components/RenderIcon'
 import Skeleton from '@material-ui/lab/Skeleton'
 
 const DetailsImg=({item})=>{
@@ -15,7 +15,7 @@ const DetailsImg=({item})=>{
                         <Skeleton variant="rect" height={300} width={300} />
                 }
             </Grid>
-            <Grid container item md={5} xs="auto" className="DataNImg" alignContent="center" direction="column">
+            <Grid container justify="center" item md={5} xs="auto" className="DataNImg" alignContent="center" direction="column">
                 <div className="DataProduct">
                     <div className="Icon3">
                         <IconContext.Provider value={{ size: '30px', color: "#0026E6" }}  >
@@ -34,7 +34,7 @@ const DetailsImg=({item})=>{
                     <h3 className="data">Precio:</h3>
 
                     ${item.precio}.00
-                </div>
+                </div>   
             </Grid>
         </Grid >
     )

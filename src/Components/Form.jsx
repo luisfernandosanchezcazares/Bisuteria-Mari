@@ -133,7 +133,7 @@ const Form = () => {
                         <CircularProgress value={uploadValue} />
                 }
                 <br />
-                <img width="200" src={picture} className="imgUpload" />
+                <img width="200" src={picture} className="imgUpload" alt=""/>
                 <br />
                 <button className="botonSubirImagen" onClick={uploadInfo}>Subir Registro</button>
             </div>

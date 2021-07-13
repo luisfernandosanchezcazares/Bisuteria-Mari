@@ -11,7 +11,6 @@ const LogInForm = () => {
 
     const history = useHistory()
 
-    const [user, setUser] = useState({})
     const [users, setUsers] = useState([])
     const [error, setError] = useState("")
 
@@ -43,13 +42,13 @@ const LogInForm = () => {
                 else
                 {
                     sessionStorage.setItem('userName', usuario)
-                        history.push('/Upload')
+                    history.push('/Upload')
                 }
     }
 
     const userExists = (usu, pass) => {
         let exists = false
-        users.map((index) => {
+        users.forEach((index) => {
             if(usu === index.usuario && pass === index.clave)
                 exists = true;
         })

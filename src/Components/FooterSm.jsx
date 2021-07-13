@@ -1,6 +1,6 @@
-import react from 'react'
+import React from 'react'
 import {IconContext} from 'react-icons'
-import RenderIcon,{validValues} from '../Components/RenderIcon'
+import RenderIcon from '../Components/RenderIcon'
 const FooterSm=()=>{
     return(
 
@@ -19,7 +19,7 @@ const FooterSm=()=>{
                    </li>
 
                    <li className="SmIcon">
-                   <img src="./Imgs/ImgsSocialM/Facebook.png"  className="SocialImg"></img>
+                   <img src="./Imgs/ImgsSocialM/Facebook.png"  className="SocialImg" alt="ImgF"></img>
                    </li>
                </ul>
 

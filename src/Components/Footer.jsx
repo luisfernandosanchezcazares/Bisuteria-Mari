@@ -2,7 +2,7 @@ import React from 'react'
 import Grid from '@material-ui/core/Grid'
 import {useHistory, Link} from 'react-router-dom'
 import {IconContext} from 'react-icons'
-import RenderIcon,{validValues} from '../Components/RenderIcon'
+import RenderIcon from '../Components/RenderIcon'
 
 
 
@@ -13,24 +13,22 @@ const Titles=["353-109-91-01","bisuteriamari2021@gmail.com","María de Jesús Ca
 
 const renderImgs =()=>{  
   let ind=0;
-    const renderImg =(name) =>(
-        <li className="Contact">
+  const renderImg = (name) => (
+    <li className="Contact" key={name}>
 
-     
-        <IconContext.Provider direction="column" className="Ic" value={{ size:'20px'} }>
-                    <RenderIcon name={Opc[ind]}></RenderIcon>
-                </IconContext.Provider>
-              
 
-        <p className="Detail">
-       
-                     
-        {Titles[ind++]}     
+      <IconContext.Provider direction="column" className="Ic" value={{ size: '20px' }}>
+        <RenderIcon name={Opc[ind]}></RenderIcon>
+      </IconContext.Provider>
+
+
+      <p className="Detail">
+        {Titles[ind++]}
       </p>
-       </li>
-       
-     
-    )
+    </li>
+
+
+  )
 
     return Opc.map(renderImg)
     

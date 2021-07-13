@@ -15,10 +15,10 @@ const Header = () => {
     }
 
     return(
-        <Grid className="header" container justify = "center" column spacing = {2}>
+        <Grid className="header" container justify = "center" spacing = {2}>
             <Grid className="headerUp" container item xs = {12}>
-                <Grid container justify = "left" container item xs = {12} sm = {4} md = {6} lg = {6}>
-                    <img height="50px" src="./Imgs/logo.png" className="Logo"/>
+                <Grid container justify = "flex-start" item xs = {12} sm = {4} md = {6} lg = {6}>
+                    <img height="50px" src="./Imgs/logo.png" className="Logo" alt="ImgLogo"/>
                     <p className="eslogan">Luce elegante, luce genial</p>
                 </Grid>
                 <Grid container item xs = {12} sm = {8} md = {6} lg = {6}>
@@ -62,7 +62,8 @@ const Header = () => {
                                     sessionStorage.getItem('userName') !== null && sessionStorage.getItem('userName') === 'Admin Bisuteria' 
                                     ?
                                         <Link to="/Upload" className="config" onClick={onClickHandle("/Upload")}>
-                                            <IconContext.Provider direction="column" value={{ size: '1.25em', color: '#FF60BD' }}>                                        <RenderIcon name={"admin"}></RenderIcon>
+                                            <IconContext.Provider direction="column" value={{ size: '1.25em', color: '#FF60BD'}}>                                        
+                                                    <RenderIcon name={"admin"}></RenderIcon>
                                             </IconContext.Provider>
                                         </Link>
                                     :
